@@ -19,12 +19,13 @@
             z-index: -10;
         }
         .header{
-            margin-top: 200px;
+            margin-top: 260px;
             text-align: center;
             position: relative;
             z-index: 100;
         }
         .header h1{
+            line-height: 66pt;
             text-transform: uppercase;
             color: #95ff21;
             text-shadow: 0 0 10px #95ff21;
@@ -35,7 +36,10 @@
         .header h1 span{
             font-size: 60pt;
             font-weight: 400;
-            letter-spacing: 44pt;
+            letter-spacing: 43.5pt;
+        }
+        .header h1 span span{ 
+            letter-spacing: 0pt;
         }
         .background_decor{
             position: absolute;
@@ -161,7 +165,7 @@
         }
         .scroll-animation.rotate-text1{
             opacity: 0;
-            top: 100px;
+            top: 200px;
         }
         .scroll-animation.rotate-text1.element-show {
             opacity: 1;
@@ -225,7 +229,7 @@
 
         <div >
             <div class="header">
-                <h1>Game developer<br><span> Portfolio</span></h1>   
+                <h1>Game developer<br><span>Portfoli<span>o</span></span></h1>   
             </div>
             <!--Spacing--> <div style="height: 400px;"></div>
             <div class="module1">
@@ -235,17 +239,17 @@
                 </h3>
 
                 <div class="images">
-                    <div class="block1 clip_left scroll-animation floating">
+                    <div class="block1 clip_left scroll-animation floating" onload="imgLoaded(this)">
                         <img src="Game1.jpg">
                         <img src="Game1.jpg">
                         <div></div>
                     </div>
-                    <div class="block2 clip_right scroll-animation floating">
+                    <div class="block2 clip_right scroll-animation floating" onload="imgLoaded(this)">
                         <img src="Game2.jpg">
                         <img src="Game2.jpg">
                         <div></div>
                     </div>
-                    <div class="block3 clip_left scroll-animation floating">
+                    <div class="block3 clip_left scroll-animation floating" onload="imgLoaded(this)">
                         <img src="Game3.jpg">
                         <img src="Game3.jpg">
                         <div></div>
