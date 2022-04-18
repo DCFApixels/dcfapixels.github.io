@@ -25,6 +25,7 @@
             z-index: 100;
         }
         .header h1{
+            text-transform: uppercase;
             color: #95ff21;
             text-shadow: 0 0 10px #95ff21;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -44,26 +45,37 @@
             width: 900px;
             margin-left: auto;
             margin-right: auto;
+            position: static;
         }
         .module1 .images{
             height: 800px;
         }
         .module1 h3{
+            display: block;
             position: relative;
             text-align: center;
-            color: #95ff21;
-            text-shadow: 
+            color: #070a306e;
+            /*text-shadow: 
                 0 0 10px #95ff21,
                 0 0 5px #2e4a69, 
                 0 0 5px #2e4a69, 
                 0 0 5px #2e4a69, 
-                0 0 5px #2e4a69;
+                0 0 5px #2e4a69;*/
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 400;
             font-size: 28pt;
-            display: block;
             z-index: 10000;
             top: 200px;
+        }
+        .module1 h3 span:nth-child(1){
+            display:inline-block;
+            transform-origin: right;
+            transform: rotate(-30deg);
+        }
+        .module1 h3 span:nth-child(2){
+            display:inline-block;
+            transform-origin: left;
+            transform: rotate(30deg);
         }
         .module1 .images div{
             position:relative;
@@ -78,6 +90,23 @@
             width: 180%;
             left: -100px;
         }
+
+        .module1 .images div div{
+            display: inline-block;
+            top: 0;
+            width: 100%;
+            position: absolute;
+            background: linear-gradient(0deg,#49ffa46c 10%, #21ff9000 90%);
+        }
+        .module1 .images img:nth-child(2){
+            position:absolute;
+            /*filter: 
+                sepia(1) 
+                contrast(50%)
+                saturate(500%) 
+                opacity(0.2) 
+                hue-rotate(50deg);*/
+        }
         
         .clip_left{transform:skewY(30deg);}
         .clip_left img{transform:skewY(-30deg);}
@@ -85,16 +114,36 @@
         .clip_right img{transform:skewY(30deg);}
 
         .module1 .images .block1{
-            top: -200px;
+            top: -100px;
         } 
         .module1 .images .block2{
-            top: -0px;
+            top: 0px;
         }
         .module1 .images .block3{
-            top: 70px;
+            top: 0px;
         }
         .module1 .images .block4{
             top: -100px;
+        }
+        .module1 .images .block1 img{
+            top: -70px; 
+            left: -105px; 
+            width: 190%;
+        }
+        .module1 .images .block2 img{
+            top: -70px; 
+            left: -150px; 
+            width: 240%;
+        }
+        .module1 .images .block3 img{
+            top: -130px; 
+            left: -50px; 
+            width: 240%;
+        }
+        .module1 .images .block4 img{
+            top: -70px; 
+            left: -105px; 
+            width: 200%;
         }
 
         .scroll-animation.floating{
@@ -108,14 +157,12 @@
         }
         .scroll-animation.rotate-text1{
             opacity: 0;
-            transform: rotate(0deg);
-            top: 200px;
+            top: 100px;
         }
         .scroll-animation.rotate-text1.element-show {
             opacity: 1;
             transition: all 1s;
-            transform: rotate(-30deg);
-            top: 0;
+            top: -100px;
         }
 
         .aboutme{
@@ -134,7 +181,7 @@
     <body >
         <div id="background">
             <div style="filter: opacity(0.04); background-size: 600px; position:absolute; background-image: url('Background.png'); width: 100%; height: 100%;"></div>
-            <div style="filter: opacity(0.054); background-size: 1200px; position:absolute; background-image: url('Background.png'); background-position: center; width: 100%; height: 100%;"></div>
+            <div style="filter: opacity(0.054); background-size: 1200px; position:absolute; background-image: url('Background.png'); background-position: center top; width: 100%; height: 100%;"></div>
             <div style=" filter: opacity(0.6); background-size: 4000px; position:absolute; background-image: url('BackgroundFog.png'); width: 100%; height: 100%;"></div>
             <div style=" filter: opacity(0.6); background-size: 1000px; position:absolute; background-image: url('BackgroundFog.png'); width: 100%; height: 100%;"></div>
             <div style=" filter: opacity(0.6); background-size: 2000px; position:absolute; background-image: url('BackgroundFog.png'); width: 100%; height: 100%;"></div>
@@ -170,9 +217,8 @@
         </div>
         </div>
 
-        <div>
-            <p>-</p>
-        </div>
+        <div><p>-</p></div>
+
         <div >
             <div class="header">
                 <h1>Game developer<br>
@@ -180,28 +226,40 @@
             </div>
             <!--Spacing--> <div style="height: 400px;"></div>
             <div class="module1">
-                <h3 class="scroll-animation rotate-text1">projects developed with me</h3>
+                
+                <h3 class="scroll-animation rotate-text1">
+                    <span>projects dev</span>e<span>loped by me</span>
+                </h3>
+
                 <div class="images">
                     <div class="block1 clip_left scroll-animation floating">
-                        <img src="Game1.jpg" style="top: -70px; left: -105px; width: 190%;">
+                        <img src="Game1.jpg">
+                        <img src="Game1.jpg">
+                        <div></div>
                     </div>
                     <div class="block2 clip_right scroll-animation floating">
-                        <img src="Game2.jpg" style="top: -70px; left: -150px; width: 240%;">
+                        <img src="Game2.jpg">
+                        <img src="Game2.jpg">
+                        <div></div>
                     </div>
-                    <div class="block3 clip_right scroll-animation floating">
-                        <img src="Game3.jpg" style="top: -10px; left: -50px; width: 240%;">
+                    <div class="block3 clip_left scroll-animation floating">
+                        <img src="Game3.jpg">
+                        <img src="Game3.jpg">
+                        <div></div>
                     </div>
-                    <div class="block4 clip_left scroll-animation floating" onload="imgLoaded(this)">
-                        <img src="Game4.jpg" style="top: -70px; left: -105px; width: 190%;">
+                    <div class="block4 clip_right scroll-animation floating" onload="imgLoaded(this)">
+                        <img src="Game4.jpg">
+                        <img src="Game4.jpg">
+                        <div></div>
                     </div>
                 </div>
             </div>
 
             <!--Spacing--> <div style="height: 250px;"></div>
+        <div><p>-</p></div>
             <div class="aboutme">
                 <h1>Title</h1>
                 <p>
-
                     text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
                 </p>
             </div>
@@ -217,9 +275,11 @@
                 change.target.classList.add('element-show');
                 }
             });
-        }
+        };
 
-        let options = { threshold: [0.5] };
+        let options = { 
+            threshold: [0.5] 
+        };
         let observer = new IntersectionObserver(onEntry, options);
         let elements = document.querySelectorAll('.scroll-animation');
 
