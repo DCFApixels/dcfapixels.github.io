@@ -191,7 +191,7 @@
                     <div class="block3 clip_right scroll-animation floating">
                         <img src="Game3.jpg" style="top: -10px; left: -50px; width: 240%;">
                     </div>
-                    <div class="block4 clip_left scroll-animation floating">
+                    <div class="block4 clip_left scroll-animation floating" onload="imgLoaded(this)">
                         <img src="Game4.jpg" style="top: -70px; left: -105px; width: 190%;">
                     </div>
                 </div>
@@ -201,7 +201,7 @@
             <div class="aboutme">
                 <h1>Title</h1>
                 <p>
-                    
+
                     text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
                 </p>
             </div>
@@ -226,5 +226,11 @@
         for (let elm of elements) {
             observer.observe(elm);
         }
+
+        function imgLoaded(img){
+            var $img = $(img);
+        
+            $img.parent().addClass('loaded');
+        };
     </script>
 </html>
