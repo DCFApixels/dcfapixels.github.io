@@ -32,6 +32,11 @@
             font-weight: 600;
             font-size: 82pt;
         }
+        .header h1 span{
+            font-size: 60pt;
+            font-weight: 400;
+            letter-spacing: 44pt;
+        }
         .background_decor{
             position: absolute;
         }
@@ -42,7 +47,7 @@
 
 
         .module1{
-            width: 1050px;
+            width: 900px;
             margin-left: auto;
             margin-right: auto;
             position: static;
@@ -77,7 +82,11 @@
             width: 25%;
             height: 100%;
             overflow: hidden;
-            box-shadow: #95ff21 0px -13px, #95ff21 0px 13px;
+            /*box-shadow: #95ff21 0px -13px, #95ff21 0px 13px;*/
+            
+            outline: 8px solid #95ff21;
+            outline-offset: -8px;
+            
         }
         .module1 .images img{
             position:relative;
@@ -216,8 +225,7 @@
 
         <div >
             <div class="header">
-                <h1>Game developer<br>
-                    Portfolio</h1>   
+                <h1>Game developer<br><span> Portfolio</span></h1>   
             </div>
             <!--Spacing--> <div style="height: 400px;"></div>
             <div class="module1">
