@@ -1,7 +1,209 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            position: relative;
+            background-color:#2f2c4f;
+            min-height: 100%;
+        }
+        #background{
+            position: absolute;
+            overflow: hidden;
+            min-height: 100%;
+            width: 100%;
+            z-index: -10;
+        }
+        .header{
+            margin-top: 200px;
+            text-align: center;
+            position: relative;
+            z-index: 100;
+        }
+        .header h1{
+            color: #95ff21;
+            text-shadow: 0 0 10px #95ff21;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+            font-size: 82pt;
+        }
+        .background_decor{
+            position: absolute;
+        }
+        .background_decor img{
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .module1{
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .module1 .images{
+            height: 800px;
+        }
+        .module1 h3{
+            position: relative;
+            text-align: center;
+            color: #95ff21;
+            text-shadow: 
+                0 0 10px #95ff21,
+                0 0 5px #2e4a69, 
+                0 0 5px #2e4a69, 
+                0 0 5px #2e4a69, 
+                0 0 5px #2e4a69;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 400;
+            font-size: 28pt;
+            display: block;
+            z-index: 10000;
+            top: 200px;
+        }
+        .module1 .images div{
+            position:relative;
+            float: left;
+            width: 25%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .module1 .images img{
+            position:relative;
+            display: block;
+            width: 180%;
+            left: -100px;
+        }
+        
+        .clip_left{transform:skewY(30deg);}
+        .clip_left img{transform:skewY(-30deg);}
+        .clip_right{transform:skewY(-30deg);}
+        .clip_right img{transform:skewY(30deg);}
+
+        .module1 .images .block1{
+            top: -200px;
+        } 
+        .module1 .images .block2{
+            top: -0px;
+        }
+        .module1 .images .block3{
+            top: 70px;
+        }
+        .module1 .images .block4{
+            top: -100px;
+        }
+
+        .scroll-animation.floating{
+            opacity: 0.1;
+            margin-top: 50px;
+        }
+        .scroll-animation.floating.element-show {
+            opacity: 1;
+            transition: all 1s;
+            margin-top: 0;
+        }
+        .scroll-animation.rotate-text1{
+            opacity: 0;
+            transform: rotate(0deg);
+            top: 200px;
+        }
+        .scroll-animation.rotate-text1.element-show {
+            opacity: 1;
+            transition: all 1s;
+            transform: rotate(-30deg);
+            top: 0;
+        }
+    </style>
+    <body >
+        <div id="background">
+            <div style="filter: opacity(0.03); background-size: 600px; position:absolute; background-image: url('Background.png'); width: 100%; height: 100%;"></div>
+            <div style="filter: opacity(0.05); background-size: 1200px; position:absolute; background-image: url('Background.png'); background-position: center; width: 100%; height: 100%;"></div>
+            <div style=" filter: opacity(0.6); background-size: 4000px; position:absolute; background-image: url('BackgroundFog.png'); width: 100%; height: 100%;"></div>
+            <div style=" filter: opacity(0.6); background-size: 1000px; position:absolute; background-image: url('BackgroundFog.png'); width: 100%; height: 100%;"></div>
+            <div style=" filter: opacity(0.6); background-size: 2000px; position:absolute; background-image: url('BackgroundFog.png'); width: 100%; height: 100%;"></div>
+            
+            <div style="filter: opacity(0.25); background: linear-gradient(to right, rgba(0,0,0,0), #469edb, rgba(0,0,0,0)); position:absolute; width: 100%; height: 100%;"></div>
+
+            <div class="background_decor" style="
+                top: -700px; left: -70%;
+                height: 2500px; width: 100%;
+                filter:opacity(0.15);">
+                <img src="Or1.png" >
+            </div>
+
+            <div class="background_decor" style="
+                top: -500px; right: -25%;
+                height: 1600px; width: 120%;
+                filter: opacity(0.2);">
+                <img src="Or2.png" >
+            </div>
+            
+            <div class="background_decor"  style="
+                top: 100px; left: -30%;
+                height: 2200px; width: 150%;
+                filter:opacity(0.15);">
+                <img src="Or3.png">
+            </div>
+
+            <div class="background_decor" style="
+                top: 1200px; right: -20%;
+                height: 2500px; width: 100%;
+                filter:opacity(0.1);">
+            <img src="Or4.png" >
+        </div>
+        </div>
+
+        <div>
+            <p>-</p>
+        </div>
+        <div >
+            <div class="header">
+                <h1>Game developer<br>
+                    Portfolio</h1>   
+            </div>
+            <!--Spacing-->
+            <div style="height: 400px;"></div>
+            <div class="module1">
+                <h3 class="scroll-animation rotate-text1">projects developed with me</h3>
+                <div class="images">
+                    <div class="block1 clip_left scroll-animation floating">
+                        <img src="Game1.png" style="top: -70px; left: -105px; width: 190%;">
+                    </div>
+                    <div class="block2 clip_right scroll-animation floating">
+                        <img src="Game2.png" style="top: -70px; left: -150px; width: 240%;">
+                    </div>
+                    <div class="block3 clip_right scroll-animation floating">
+                        <img src="Game3.png" style="top: -10px; left: -50px; width: 240%;">
+                    </div>
+                    <div class="block4 clip_left scroll-animation floating">
+                        <img src="Game4.png" style="top: -70px; left: -105px; width: 190%;">
+                    </div>
+                </div>
+            </div>
+
+            <div style="height: 5000px;"></div>
+        </div>
+
+    </body>
+    <script>
+        function onEntry(entry) {
+            entry.forEach(change => {
+                if (change.isIntersecting) {
+                change.target.classList.add('element-show');
+                }
+            });
+        }
+
+        let options = { threshold: [0.5] };
+        let observer = new IntersectionObserver(onEntry, options);
+        let elements = document.querySelectorAll('.scroll-animation');
+
+        for (let elm of elements) {
+            observer.observe(elm);
+        }
+    </script>
 </html>
