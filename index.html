@@ -33,14 +33,16 @@
             font-weight: 600;
             font-size: 82pt;
         }
-        .header h1 span{
+        .header h1 div{
+            display: inline-block;
             font-size: 60pt;
             font-weight: 400;
-            letter-spacing: 43.5pt;
         }
-        .header h1 span span{ 
-            letter-spacing: 0pt;
-        }
+        .header h1 div span{
+            display: inline-block;
+            margin: 0px 19.5px;
+        }  
+
         .background_decor{
             position: absolute;
         }
@@ -51,7 +53,7 @@
 
 
         .module1{
-            width: 900px;
+            width: 1000px;
             margin-left: auto;
             margin-right: auto;
             position: static;
@@ -229,7 +231,20 @@
 
         <div >
             <div class="header">
-                <h1>Game developer<br><span>Portfoli<span>o</span></span></h1>   
+                <h1>
+                    Game developer<br>
+                    <div>
+                        <span>P</span>
+                        <span>o</span>
+                        <span>r</span>
+                        <span>t</span>
+                        <span>f</span>
+                        <span>o</span>
+                        <span>l</span>
+                        <span>i</span>
+                        <span>o</span>
+                    </div>
+                </h1>   
             </div>
             <!--Spacing--> <div style="height: 400px;"></div>
             <div class="module1">
