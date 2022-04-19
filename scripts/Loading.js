@@ -1,4 +1,3 @@
-
 function init() {
     setTimeout(function() {
         if (arguments.callee.done) return;
@@ -7,14 +6,12 @@ function init() {
         elem.classList.add("hidden");
         elem.classList.remove("display-fixed");
     }, 1);
-    // выходим, если функция уже выполнялась
-
 };
-
- /* для Mozilla/Firefox/Opera 9 */
+/*
+//для Mozilla/Firefox/Opera 9 
 if (document.addEventListener) {
-document.addEventListener("DOMContentLoaded", init, false);
-}
+    document.addEventListener("DOMContentLoaded", init, false);
+}*/
 
 /* для Internet Explorer */
 /*@cc_on@*/
@@ -30,12 +27,12 @@ init(); $('.main').show();
 
 /* для Safari */
 if (/WebKit/i.test(navigator.userAgent)) { // условие для Safari
-var _timer = setInterval(function () {
-if (/loaded|complete/.test(document.readyState)) {
-clearInterval(_timer);
-init(); // вызываем обработчик для onload
-}
-}, 10);
+    var _timer = setInterval(function () {
+    if (/loaded|complete/.test(document.readyState)) {
+        clearInterval(_timer);
+        init(); // вызываем обработчик для onload
+        }
+    }, 10);
 }
 
 /* для остальных браузеров */
