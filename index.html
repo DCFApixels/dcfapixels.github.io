@@ -1,217 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <style>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/aboutme.css" type="text/css">
+    <link rel="stylesheet" href="styles/header.css" type="text/css">
+    <link rel="stylesheet" href="styles/background.css" type="text/css">
+    <link rel="stylesheet" href="styles/spinner.css" type="text/css">
+    <body>
 
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            position: relative;
-            background-color:#2f2c4f;
-            min-height: 100%;
-        }
-        #background{
-            position: absolute;
-            overflow: hidden;
-            min-height: 100%;
-            width: 100%;
-            z-index: -10;
-        }
-        .header{
-            margin-top: 260px;
-            text-align: center;
-            position: relative;
-            z-index: 100;
-        }
-        .container{
-            display: flex;
-            flex-direction:row;
-            justify-content: center;
-            align-items: stretch;
-            margin: auto;
-        }
-        .header h1{
-            line-height: 66pt;
-            text-transform: uppercase;
-            color: #95ff21;
-            text-shadow: 0 0 10px #95ff21;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: 600;
-            font-size: 82pt;
-        }
-        .header h1 div{
-            text-align-last:justify;
-            margin: auto;
-            font-size: 60pt;
-            font-weight: 400;
-        }
-        .header h1 div span{
-            display: inline-block;
-        }  
-        .header h1 div span:first-child{
-            text-align-last: left;
-            justify-content:left;
-            text-align: left;
-        }
-        .header h1 div span:last-child{
-            text-align-last: right;
-            justify-content:right;
-            text-align: right;
-        }
+        <div class="load-screen hidden">
+            <svg class="spinner" viewBox="0 0 50 50">
+                <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+            </svg>
+        </div>
 
-        .background_decor{
-            position: absolute;
-        }
-        .background_decor img{
-            width: 100%;
-            height: 100%;
-        }
-
-
-        .module1{
-            width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            position: static;
-        }
-        .module1 .images{
-            height: 650px;
-        }
-        .module1 h3{
-            display: block;
-            position: relative;
-            text-align: center;
-            color: #070a306e;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: 400;
-            font-size: 28pt;
-            z-index: 10000;
-            top: 200px;
-        }
-        .module1 h3 span:nth-child(1){
-            display:inline-block;
-            transform-origin: right;
-            transform: rotate(-30deg);
-        }
-        .module1 h3 span:nth-child(2){
-            display:inline-block;
-            transform-origin: left;
-            transform: rotate(30deg);
-        }
-        .module1 .images div{
-            position:relative;
-            float: left;
-            width: 25%;
-            height: 100%;
-            overflow: hidden;
-            /*box-shadow: #95ff21 0px -13px, #95ff21 0px 13px;*/
-            
-            outline: 8px solid #95ff21;
-            outline-offset: -8px;
-            
-        }
-        .module1 .images img{
-            position:relative;
-            display: block;
-            width: 180%;
-            left: -100px;
-        }
-
-        .module1 .images div div{
-            display: inline-block;
-            top: 0;
-            width: 100%;
-            position: absolute;
-            background: linear-gradient(0deg,#49ffa46c 10%, #21ff9000 90%);
-        }
-        .module1 .images img:nth-child(2){
-            position:absolute;
-            /*filter: 
-                sepia(1) 
-                contrast(50%)
-                saturate(500%) 
-                opacity(0.2) 
-                hue-rotate(50deg);*/
-        }
-        
-        .clip_left{transform:skewY(30deg);}
-        .clip_left img{transform:skewY(-30deg);}
-        .clip_right{transform:skewY(-30deg);}
-        .clip_right img{transform:skewY(30deg);}
-
-        .module1 .images .block1{
-            top: -100px;
-        } 
-        .module1 .images .block2{
-            top: 0px;
-        }
-        .module1 .images .block3{
-            top: 0px;
-        }
-        .module1 .images .block4{
-            top: -100px;
-        }
-        .module1 .images .block1 img{
-            top: -170px; 
-            left: -105px; 
-            width: 190%;
-        }
-        .module1 .images .block2 img{
-            top: -170px; 
-            left: -150px; 
-            width: 240%;
-        }
-        .module1 .images .block3 img{
-            top: -230px; 
-            left: -50px; 
-            width: 240%;
-        }
-        .module1 .images .block4 img{
-            top: -170px; 
-            left: -105px; 
-            width: 200%;
-        }
-
-        .scroll-animation.floating{
-            opacity: 0.1;
-            margin-top: 50px;
-        }
-        .scroll-animation.floating.element-show {
-            opacity: 1;
-            transition: all 1s;
-            margin-top: 0;
-        }
-        .scroll-animation.rotate-text1{
-            opacity: 0;
-            top: 200px;
-        }
-        .scroll-animation.rotate-text1.element-show {
-            opacity: 1;
-            transition: all 1s;
-            top: -100px;
-        }
-
-        .aboutme{
-            width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            color: #95ff21;
-            text-shadow: 0 0 10px #95ff21;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 20pt; 
-        }
-        .aboutme h1{
-            font-size: 40pt; 
-        }
-    </style>
-    <body >
         <div id="background">
-            <div style="filter: opacity(0.04); background-size: 600px; position:absolute; background-image: url('Background.png'); width: 100%; height: 100%;"></div>
-            <div style="filter: opacity(0.054); background-size: 1200px; position:absolute; background-image: url('Background.png'); background-position: center top; width: 100%; height: 100%;"></div>
-            <div style=" filter: opacity(0.6); background-size: 4000px; position:absolute; background-image: url('BackgroundFog.png'); width: 100%; height: 100%;"></div>
-            <div style=" filter: opacity(0.6); background-size: 1000px; position:absolute; background-image: url('BackgroundFog.png'); width: 100%; height: 100%;"></div>
-            <div style=" filter: opacity(0.6); background-size: 2000px; position:absolute; background-image: url('BackgroundFog.png'); width: 100%; height: 100%;"></div>
+            <div style="filter: opacity(0.04); background-size: 600px; position:absolute; background-image: url('images/Background.png'); width: 100%; height: 100%;"></div>
+            <div style="filter: opacity(0.054); background-size: 1200px; position:absolute; background-image: url('images/Background.png'); background-position: center top; width: 100%; height: 100%;"></div>
+            <div style=" filter: opacity(0.6); background-size: 4000px; position:absolute; background-image: url('images/BackgroundFog.png'); width: 100%; height: 100%;"></div>
+            <div style=" filter: opacity(0.6); background-size: 1000px; position:absolute; background-image: url('images/BackgroundFog.png'); width: 100%; height: 100%;"></div>
+            <div style=" filter: opacity(0.6); background-size: 2000px; position:absolute; background-image: url('images/BackgroundFog.png'); width: 100%; height: 100%;"></div>
             
             <div style="filter: opacity(0.25); background: linear-gradient(to right, rgba(0,0,0,0), #469edb, rgba(0,0,0,0)); position:absolute; width: 100%; height: 100%;"></div>
 
@@ -219,28 +26,28 @@
                 top: -700px; left: -70%;
                 height: 2500px; width: 100%;
                 filter:opacity(0.15);">
-                <img src="Or1.png" >
+                <img src="images/Or1.png" >
             </div>
 
             <div class="background_decor" style="
                 top: -500px; right: -25%;
                 height: 1600px; width: 120%;
                 filter: opacity(0.2);">
-                <img src="Or2.png" >
+                <img src="images/Or2.png" >
             </div>
             
             <div class="background_decor"  style="
                 top: 100px; left: -30%;
                 height: 2200px; width: 150%;
                 filter:opacity(0.15);">
-                <img src="Or3.png">
+                <img src="images/Or3.png">
             </div>
 
             <div class="background_decor" style="
                 top: 1200px; right: -20%;
                 height: 2500px; width: 100%;
                 filter:opacity(0.1);">
-            <img src="Or4.png" >
+            <img src="images/Or4.png" >
         </div>
         </div>
 
@@ -251,7 +58,6 @@
                 <div class="container">
                     <h1>Game developer <br>
                     <div>
-                        
                         <span>P</span>
                         <span>o</span>
                         <span>r</span>
@@ -261,7 +67,6 @@
                         <span>l</span>
                         <span>i</span>
                         <span>o</span>  
-
                     </div></h1> 
                 </div>
             </div>
@@ -274,23 +79,19 @@
 
                 <div class="images">
                     <div class="block1 clip_left scroll-animation floating" onload="imgLoaded(this)">
-                        <img src="Game1.jpg">
-                        <img src="Game1.jpg">
+                        <img src="images/Game1.jpg">
                         <div></div>
                     </div>
                     <div class="block2 clip_right scroll-animation floating" onload="imgLoaded(this)">
-                        <img src="Game2.jpg">
-                        <img src="Game2.jpg">
+                        <img src="images/Game2.jpg">
                         <div></div>
                     </div>
                     <div class="block3 clip_left scroll-animation floating" onload="imgLoaded(this)">
-                        <img src="Game3.jpg">
-                        <img src="Game3.jpg">
+                        <img src="images/Game3.jpg">
                         <div></div>
                     </div>
                     <div class="block4 clip_right scroll-animation floating" onload="imgLoaded(this)">
-                        <img src="Game4.jpg">
-                        <img src="Game4.jpg">
+                        <img src="images/Game4.jpg">
                         <div></div>
                     </div>
                 </div>
@@ -308,26 +109,11 @@
             <div style="height: 5000px;"></div>
         </div>
 
+
     </body>
-    <script>
-        function onEntry(entry) {
-            entry.forEach(change => {
-                if (change.isIntersecting) {
-                change.target.classList.add('element-show');
-                }
-            });
-        };
-
-        let options = { 
-            threshold: [0.5] 
-        };
-        let observer = new IntersectionObserver(onEntry, options);
-        let elements = document.querySelectorAll('.scroll-animation');
-
-        for (let elm of elements) {
-            observer.observe(elm);
-        }
-
+    <script src="scripts/Loading.js" type="text/javascript"></script>
+    <script src="scripts/ScrollShow.js" type="text/javascript"></script>
+    <script type="text/javascript">
         function imgLoaded(img){
             var $img = $(img);
         

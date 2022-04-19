@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    background-color:#2f2c4f;
+    min-height: 100%;
+    min-width: 100%;
+}
+.module1{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+}
+.module1 .images{
+    height: 650px;
+}
+.module1 h3{
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #070a306e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 28pt;
+    z-index: 10000;
+    top: 200px;
+}
+.module1 h3 span:nth-child(1){
+    display:inline-block;
+    transform-origin: right;
+    transform: rotate(-30deg);
+}
+.module1 h3 span:nth-child(2){
+    display:inline-block;
+    transform-origin: left;
+    transform: rotate(30deg);
+}
+.module1 .images div{
+    position:relative;
+    float: left;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    /*box-shadow: #95ff21 0px -13px, #95ff21 0px 13px;*/
+    
+    outline: 5px solid #95ff21;
+    outline-offset: -5px;
+    
+    box-shadow: 
+        0px 80px 90px -90px #95ff21,
+        0px -80px 90px -90px #95ff21 ;
+}
+.module1 .images img{
+    position:relative;
+    display: block;
+    width: 180%;
+    left: -100px;
+}
+.module1 .images div div{
+    display: inline-block;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(0deg,#49ffa46c 10%, #21ff9000 90%);
+}
+
+.clip_left{transform:skewY(30deg);}
+.clip_left img{transform:skewY(-30deg);}
+.clip_right{transform:skewY(-30deg);}
+.clip_right img{transform:skewY(30deg);}
+.module1 .images .block1{
+    top: -100px;
+} 
+.module1 .images .block2{
+    top: 0px;
+}
+.module1 .images .block3{
+    top: 0px;
+}
+.module1 .images .block4{
+    top: -100px;
+}
+.module1 .images .block1 img{
+    top: -170px; 
+    left: -105px; 
+    width: 190%;
+}
+.module1 .images .block2 img{
+    top: -170px; 
+    left: -150px; 
+    width: 240%;
+}
+.module1 .images .block3 img{
+    top: -230px; 
+    left: -50px; 
+    width: 240%;
+}
+.module1 .images .block4 img{
+    top: -170px; 
+    left: -105px; 
+    width: 200%;
+}
+.scroll-animation.floating{
+    opacity: 0.1;
+    margin-top: 50px;
+}
+.scroll-animation.floating.element-show {
+    opacity: 1;
+    transition: all 1s;
+    margin-top: 0;
+}
+.scroll-animation.rotate-text1{
+    opacity: 0;
+    top: 200px;
+}
+.scroll-animation.rotate-text1.element-show {
+    opacity: 1;
+    transition: all 1s;
+    top: -100px;
+}
+
+.display-fixed{
+    position:fixed;
+    opacity: 1;
+}
+.hidden{
+    position:fixed;
+    transition: all 1s;
+    opacity: 0;
+}
+.hidden .spinner{
+    display: none;
+}
+.load-screen{
+    background-color: #2f2c4f;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+}
