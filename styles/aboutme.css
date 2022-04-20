@@ -1,3 +1,71 @@
+.aboutme__hello{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #95ff21;
+    text-shadow: 0 0 10px #95ff21;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30pt; 
+}
+.aboutme__hello table {
+  margin: 0 auto;
+}
+.aboutme__hello p{
+  text-indent: 30px;
+  vertical-align: top;
+}
+.aboutme__hello hr{
+  height: 6px;
+  color: #95ff21;
+  text-shadow: 0 0 10px #95ff21;
+}
+
+.aboutme__hello__cursor {
+    -webkit-animation: aboutme__hello__cursor-anim 1s infinite;
+            animation: aboutme__hello__cursor-anim 1s infinite;
+}
+@-webkit-keyframes aboutme__hello__cursor-anim {
+  0% {
+    opacity: 0;
+  }
+  15%{
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  80%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes aboutme__hello__cursor-anim {
+  0% {
+    opacity: 0;
+  }
+  15%{
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  80%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.aboutme__hello__myphoto{
+    display: inline-block;
+    border-radius: 128px;
+    width: 128px;
+    border: 5px solid #95ff21;
+}
+
 .aboutme{
     width: 900px;
     margin-left: auto;
@@ -5,8 +73,25 @@
     color: #95ff21;
     text-shadow: 0 0 10px #95ff21;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20pt; 
+    font-size: 16pt; 
+}
+.aboutme hr{
+  height: 4px;
+  border-radius: 4px;
+  background-color: #95ff21;
+  color: #95ff21;
+  box-shadow: 0 0 10px #95ff21;
+  border: 0px solid #0000;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .aboutme h1{
-    font-size: 40pt; 
+    font-size: 30pt; 
+}
+.aboutme__section td:first-child{
+  width: 300px;
+}
+.aboutme__section p{
+  text-align:justify;
 }
