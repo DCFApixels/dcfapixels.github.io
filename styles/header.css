@@ -34,9 +34,11 @@
     text-align-last: left;
     justify-content:left;
     text-align: left;
+    align-self:flex-end;
 }
 .header h1 div span:last-child{
     text-align-last: right;
     justify-content:right;
     text-align: right;
+    align-self:flex-start;
 }

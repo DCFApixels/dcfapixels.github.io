@@ -1,0 +1,62 @@
+.helloblock{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #95ff21;
+    text-shadow: 0 0 10px #95ff21;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30pt; 
+}
+.helloblock table {
+  margin: 0 auto;
+}
+.helloblock p{
+  text-indent: 30px;
+  vertical-align: top;
+}
+
+.helloblock__cursor {
+    -webkit-animation: helloblock__cursor-anim 1.5s infinite;
+            animation: helloblock__cursor-anim 1.5s infinite;
+}
+@-webkit-keyframes helloblock__cursor-anim {
+  0% {
+    opacity: 0;
+  }
+  25%{
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes helloblock__cursor-anim {
+  0% {
+    opacity: 0;
+  }
+  25%{
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.helloblock__myphoto{
+    display: inline-block;
+    border-radius: 128px;
+    width: 128px;
+    border: 5px solid #95ff21;
+}

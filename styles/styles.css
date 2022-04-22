@@ -5,6 +5,7 @@
 }
 body{
     position: relative;
+    scroll-behavior: smooth;
     background-color:#2f2c4f;
     min-height: 100%;
     min-width: 100%;
@@ -30,3 +31,15 @@ body{
     height: 100%;
     z-index: 100000;
 }
+
+hr{
+    height: 4px;
+    border-radius: 4px;
+    background-color: #95ff21;
+    color: #95ff21;
+    box-shadow: 0 0 10px #95ff21;
+    border: 0px solid #0000;
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }

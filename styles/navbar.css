@@ -1,0 +1,22 @@
+.navbar{
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    background-color: #00000055;
+    z-index: 10000;
+}
+
+.navbar li{
+    cursor:default;
+    padding: 8px;
+    display: inline-block;
+    text-indent: 30px;
+}
+.navbar a{
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    text-decoration: none;
+}
