@@ -58,12 +58,26 @@
     font-weight: 400;
     font-size: 30pt; 
     text-indent: 256px;
+    margin: 26pt 0 10pt 0;
 }
 #portfolio h1::before{
     content:"→";
     padding-right: 20px;
 }
 
+#portfolio hr{
+    margin: 0;
+}
+
 .pixelated{
     image-rendering: pixelated;
+}
+#catanim{
+    position: relative;
+    z-index: 1000;
+    top: -46px;
+    left: 10%;
+}
+#catanim.hidden{
+    display: none;
 }
