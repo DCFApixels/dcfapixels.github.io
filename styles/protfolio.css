@@ -37,6 +37,7 @@
     position: relative;
     width: 100%;
     padding-bottom: 100%;
+    background-color: #1b1a28;
 }
 .image_list li>div{
     position: absolute;
@@ -63,7 +64,7 @@
 }
 
 .portfolio_description{
-    z-index: 10000;
+    z-index: 100;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -72,6 +73,7 @@
     margin-right: -50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 35px #4aaeff80;
+    background-color: #1b1a28;
 }
 .portfolio_description:hover{
     transition: all 0.4s;
@@ -91,11 +93,12 @@
 }
 .portfolio_description .text{
     bottom: 5%;
+    font-weight: 700;
 }
 .portfolio_description .title{
     top: 5%;
-    font-size: 18pt;
-    font-weight: 900;
+    font-size: 20pt;
+    font-weight: bold;
 }
 
 .pixelated{
@@ -106,7 +109,7 @@
 
 #catanim{
     position: relative;
-    z-index: 1000;
+    z-index: 10;
     top: -46px;
     left: 10%;
 }
@@ -121,6 +124,6 @@
 }
 #portfolio .catanim_base{
     position: absolute;
-    z-index: 1000;
+    z-index: 10;
     width: 100%;
 }
