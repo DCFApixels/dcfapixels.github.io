@@ -40,11 +40,11 @@
 }
 .module1__gradient{
     height: 100%;
-    outline: 5px solid #95ff21;
+   /* outline: 5px solid #95ff21;
     outline-offset: -5px;
     box-shadow: 
         0px 80px 90px -90px #95ff21,
-        0px -80px 90px -90px #95ff21;
+        0px -80px 90px -90px #95ff21;*/
 
     pointer-events: none;
     display: inline-block;
@@ -71,7 +71,7 @@
     display: inline-block;
     position: absolute;
 }
-
+.clip_left, .clip_right{overflow: hidden;}
 .clip_left{transform:skewY(30deg);}
 .clip_left .cliped{transform:skewY(-30deg);}
 .clip_right{transform:skewY(-30deg);}
@@ -110,7 +110,6 @@
     left: -105px; 
     width: 200%;
 }
-
 
 .scroll-animation.floating{
     opacity: 0.1;

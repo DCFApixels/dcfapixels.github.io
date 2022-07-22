@@ -9,13 +9,13 @@
 
 .navbar li{
     cursor:default;
-    padding: 8px;
+    padding: 6pt;
     display: inline-block;
     text-indent: 30px;
 }
 .navbar a{
     color: aliceblue;
-    font-size: 18px;
+    font-size: 15pt;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     text-decoration: none;

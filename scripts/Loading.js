@@ -1,6 +1,7 @@
 function init() {
     setTimeout(function() {
-        if (arguments.callee.done) return;
+        if (arguments.callee.done) 
+            return;
         arguments.callee.done = true;
         let elem = document.querySelector('.load-screen');
         elem.classList.add("hidden");
