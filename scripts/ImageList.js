@@ -89,7 +89,7 @@ function buildImageList(root, contentName, count, datasource)
         let desVideo = document.createElement("video");
         desVideo.src = VIDEO_PATH + elemdata.video;
         desVideo.muted = true;
-        desVideo.autoplay = true;
+        //desVideo.autoplay = true;
         desVideo.loop = true;
         let ptext = document.createElement("p");
         ptext.innerHTML = elemdata.description;
@@ -97,6 +97,7 @@ function buildImageList(root, contentName, count, datasource)
         let ptitle = document.createElement("p");
         ptitle.innerHTML = elemdata.name;
         ptitle.classList.add("title");
+
         des.appendChild(desVideo);
         des.appendChild(ptext);
         des.appendChild(ptitle);
