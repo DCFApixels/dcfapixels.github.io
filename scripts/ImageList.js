@@ -64,12 +64,27 @@ function buildImageList(root, contentName, count, datasource)
             img.style.height = elemdata.imageScale;
         }
         
-        let des = document.createElement("a");
+
+        let des;
+        if (elemdata.demoUrl != null && elemdata.demoUrl != "")
+        {
+            des = document.createElement("a");
+            des.target = "_blank";   
+        }
+        else
+            des = document.createElement("div");
+
         des.href = elemdata.demoUrl;
         des.classList.add("portfolio_description");
 
         if (elemdata.video != null)
         {
+            let desload = document.createElement("div");
+            desload.innerHTML = '<svg class="spinner" viewBox="0 0 50 50">'+
+            '<circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>'+
+            '</svg>';
+            des.appendChild(desload); 
+
             let desVideo = document.createElement("video");
             desVideo.src = VIDEO_PATH + elemdata.video;
             desVideo.muted = true;
@@ -107,7 +122,22 @@ function buildImageList(root, contentName, count, datasource)
 
   
         portfolioBlocks.push(new Block(content, img, des));
-  
+
+        if ((elemdata.demoUrl != null && elemdata.demoUrl != "") ||
+            (elemdata.demoUrl == null && elemdata.video == null))
+        {
+            let openbutton = document.createElement("div");
+            openbutton.classList.add("open_button");
+            openbutton.src = "images/OpenWith.png";            
+            des.appendChild(openbutton);
+        }
+
+        if (elemdata.demoUrl == null && elemdata.video == null)
+        {
+            des.style.cursor = "pointer";
+            des.addEventListener("click", function(){ImageBrowser.Show(elemdata.image, datasource=="pixelArt")})
+        }  
+
         content.appendChild(img);
         content.appendChild(des);
         li.appendChild(content);

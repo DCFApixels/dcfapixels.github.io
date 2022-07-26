@@ -63,6 +63,25 @@
     transform: translate(-50%, -50%)
 }
 
+#portfolio .image_list .open_button
+{
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+    display: block;
+    padding: 3px;
+    box-shadow: #2d4094  0px 3px;
+
+    background-color: #528ac5;
+    background-image: url("../images/OpenWith.png");
+    background-position: center;
+    background-size: 32px;
+    background-repeat: no-repeat;
+}
+
 .portfolio_description{
     z-index: 100;
     width: 100%;
@@ -81,7 +100,7 @@
     height: 103%;
 }
 .portfolio_description p{
-    width: 80%;
+    width: 76%;
     /*color: rgba(255, 255, 255, 0.8);*/
     color: #528ac5;
     position: absolute;
@@ -89,7 +108,7 @@
     text-shadow: none;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 14pt;
-    margin: 0 10%;
+    margin: 0 12%;
 }
 .portfolio_description .text{
     bottom: 5%;
