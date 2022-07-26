@@ -7,6 +7,9 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16pt; 
     font-weight: 400;
+
+    overflow: hidden;
+    padding-bottom: 64px;
 }
 
 #portfolio h1{
@@ -93,6 +96,7 @@
     transform: translate(-50%, -50%);
     box-shadow: 0 0 35px #4aaeff80;
     background-color: #1b1a28;
+    contain:none;
 }
 .portfolio_description:hover{
     transition: all 0.4s;
