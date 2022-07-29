@@ -56,6 +56,11 @@ function buildImageList(root, contentName, count, datasource)
         let li = document.createElement("li");
         let content = document.createElement("div");
 
+        if (elemdata.style != null)
+            content.classList.add(elemdata.style);
+        else
+            content.classList.add("default");
+
         let img = document.createElement("img");
         img.src = IMAGE_PATH + elemdata.image;
         if (elemdata.imageScale != null)
@@ -63,6 +68,7 @@ function buildImageList(root, contentName, count, datasource)
             img.style.width = elemdata.imageScale;
             img.style.height = elemdata.imageScale;
         }
+        img.classList.add("preview");
         
 
         let des;
@@ -101,30 +107,23 @@ function buildImageList(root, contentName, count, datasource)
                 desImg.style.width = elemdata.imageScale;
                 desImg.style.height = elemdata.imageScale;
             }
+            desImg.classList.add("preview");
             des.appendChild(desImg); 
         }
 
         let ptitle = document.createElement("p");
-        ptitle.innerHTML = elemdata.name;
+        ptitle.innerHTML = elemdata.name != null ? elemdata.name : "";
         ptitle.classList.add("title");
         des.appendChild(ptitle);
 
         let ptext = document.createElement("p");
-        ptext.innerHTML = elemdata.description;
+        ptext.innerHTML = elemdata.description != null ? elemdata.description : "";
         ptext.classList.add("text");
         des.appendChild(ptext);
-
-        if (elemdata.textColor != null)
-        {
-            ptext.style.color = elemdata.textColor;
-            ptitle.style.color = elemdata.textColor;
-        }
-
   
-        portfolioBlocks.push(new Block(content, img, des));
 
         if ((elemdata.demoUrl != null && elemdata.demoUrl != "") ||
-            (elemdata.demoUrl == null && elemdata.video == null))
+            (elemdata.demoUrl == null && elemdata.video == null && elemdata.links == null))
         {
             let openbutton = document.createElement("div");
             openbutton.classList.add("open_button");
@@ -132,11 +131,37 @@ function buildImageList(root, contentName, count, datasource)
             des.appendChild(openbutton);
         }
 
-        if (elemdata.demoUrl == null && elemdata.video == null)
+        if (elemdata.demoUrl == null && elemdata.video == null && elemdata.links == null)
         {
             des.style.cursor = "pointer";
             des.addEventListener("click", function(){ImageBrowser.Show(elemdata.image, datasource=="pixelArt")})
         }  
+
+        if (elemdata.links != null)
+        {
+            let linksblock = document.createElement("div"); 
+            linksblock.classList.add("links_block");
+
+            for (let j = 0; j < elemdata.links.length; j++) {
+                const link = elemdata.links[j];
+                let linkblock = document.createElement("div");
+                let icon = document.createElement("img");
+                icon.src = link.icon;
+                let a = document.createElement("a");
+                a.href = link.url;
+                a.target = "_blank"; 
+                a.appendChild(icon);
+                let tn = document.createElement("p");
+                tn.textContent = link.text;
+                a.appendChild(tn);
+
+                linkblock.appendChild(a);
+                linksblock.appendChild(linkblock);
+            }
+            des.appendChild(linksblock);
+        }
+
+        portfolioBlocks.push(new Block(content, img, des));
 
         content.appendChild(img);
         content.appendChild(des);

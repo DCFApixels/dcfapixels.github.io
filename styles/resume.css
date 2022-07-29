@@ -1,4 +1,4 @@
-#resume{
+#resume, #contact{
     width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -7,7 +7,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16pt; 
 }
-#resume h1{
+#resume h1, #contact h1{
     font-size: 30pt; 
 }
 .resume__section td:first-child{

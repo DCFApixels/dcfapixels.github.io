@@ -26,6 +26,9 @@ let closeButton = ImageBrowser.origin.querySelector(".close_button");
 closeButton.onclick = function(){
     ImageBrowser.Close();
 }
+ImageBrowser.origin.onclick = function(){
+    ImageBrowser.Close();
+}
 
 
 ImageBrowser.origin.classList.add("hidden");
