@@ -12,7 +12,13 @@ function Block(root, img, des)
     this.des = des;
 
     this.showDescription = function()
-    {
+    {        
+        if (IsMobileDevice() == true)
+        {
+            portfolioBlocks.forEach(block => {
+                block.hideDescription();
+            });
+        }
         des.classList.remove("hidden");
         let video = des.querySelector('video');
         if (video != null)
@@ -32,8 +38,14 @@ function Block(root, img, des)
         }
     }
 
-    this.root.addEventListener("mouseover", this.showDescription);
-    this.root.addEventListener("mouseout", this.hideDescription);
+    if (IsMobileDevice() == false)
+    {
+        this.root.addEventListener("mouseover", this.showDescription);
+        this.root.addEventListener("mouseout", this.hideDescription);
+    } else
+    {
+        this.root.addEventListener("click", this.showDescription);
+    }
     this.hideDescription();
 }
 

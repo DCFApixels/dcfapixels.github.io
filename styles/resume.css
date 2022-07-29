@@ -16,3 +16,27 @@
 .resume__section p{
   text-align:justify;
 }
+
+ul>ul{
+  margin-left: 25px;
+}
+
+.no_ul_mark{
+  list-style-type: none;
+  margin-left: -25px;
+}
+
+#resume .star{
+  width: 16px;
+  height: 16px;
+  background-size: 16px;
+  display: inline-block;
+}
+
+#resume .star.on{
+  background-image: url(../images/StarOnGreen.png);
+}
+
+#resume .star.off{
+  background-image: url(../images/StarOffGreen.png);
+}
