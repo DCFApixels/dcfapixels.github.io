@@ -7,8 +7,20 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16pt; 
 }
-#resume h1, #contact h1{
+#resume h2, #contact h2{
     font-size: 30pt; 
+    font-weight: 400;
+}
+#resume h1, #contact h1{
+  font-size: 40pt; 
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.resume__section img{
+  width: 100%;
+  height: 80px;
+  object-fit:contain;
 }
 .resume__section td:first-child{
   width: 300px;
