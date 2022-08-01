@@ -31,7 +31,6 @@ data.portfolio.projects = [
     style: "project",
     template: "project",
     links:[
-      //{icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "null"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.wannaplay.arrowexplosion"},
       {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/ahajmf9PL925-g"},
     ],
@@ -43,7 +42,6 @@ data.portfolio.projects = [
     style: "project",
     template: "project",
     links:[
-      //{icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "null"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.wannaplay.batteringram"},
       {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/UZ5UG4DLH6NDbA"},
     ],
@@ -67,10 +65,23 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DCFA.MathReactor&hl=ru&gl=US"},
+      {icon: "images/IconYoutubeBlue.png", text:"Example", url: "none"},
     ],
   },
-]
+];
+data.portfolio.otherProjects = [
+  {
+    name: "Procedural map generation",
+    image: "Game5.jpg",
+    description: "Role: Developer",
+    style: "project",
+    template: "project",
+    links:[
+      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://play-games.googleusercontent.com/vp/mp4/1280x720/kVE67kuUIkc.mp4"},
+    ],
+  },  
+];
+
 data.portfolio.vfx = [
   {
     name: "Water and Wind",

@@ -25,10 +25,9 @@
 
 
 .image_list{
-    
     text-shadow: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     list-style-type: none;
     
     background:linear-gradient(to left, #2f2c4f50, #2f2c4f12);
