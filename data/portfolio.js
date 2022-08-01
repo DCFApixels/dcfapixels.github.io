@@ -65,7 +65,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "images/IconYoutubeBlue.png", text:"Example", url: "none"},
+      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DCFA.MathReactor&hl=ru&gl=US"},
     ],
   },
 ];
@@ -77,7 +77,7 @@ data.portfolio.otherProjects = [
     style: "project",
     template: "project",
     links:[
-      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://play-games.googleusercontent.com/vp/mp4/1280x720/kVE67kuUIkc.mp4"},
+      {icon: "images/IconYoutubeBlue.png", text:"Example", url: "none"},
     ],
   },  
 ];
