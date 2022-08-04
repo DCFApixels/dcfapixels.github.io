@@ -52,3 +52,8 @@ ul>ul{
 #resume .star.off{
   background-image: url(../images/StarOffGreen.png);
 }
+
+#contact a,
+#contact a:visited{
+  color: #95ff21;
+}
