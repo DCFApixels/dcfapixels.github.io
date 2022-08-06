@@ -71,13 +71,13 @@ data.portfolio.projects = [
 ];
 data.portfolio.otherProjects = [
   {
-    name: "Procedural map generation",
-    image: "Game5.jpg",
-    description: "Role: Developer",
+    name: "PainCraft/БольКрафт",
+    image: "OtherProject1.jpg",
+    description: "Project type: Map for Warcraft 3</br>Role: Developer(Lua)</br>Main point: Procedural map generation",
     style: "project",
     template: "project",
     links:[
-      {icon: "images/IconYoutubeBlue.png", text:"Example", url: "none"},
+      {icon: "images/IconYoutubeBlue.png", text:"Example", url: "https://www.youtube.com/watch?v=BD41TeVHSis"},
     ],
   },  
 ];

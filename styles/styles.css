@@ -52,3 +52,13 @@ hr{
     -webkit-user-select: none;
     user-select: none;
 }
+
+#github_button{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+}
+#github_button img{
+    display:block
+}
