@@ -18,6 +18,10 @@
     text-indent: 13%;
     margin: 26pt 0 10pt 0;
 }
+#portfolio h2{
+    font-size: 20pt; 
+}
+
 #portfolio h1::before{
     content:"→";
     padding-right: 20px;
@@ -191,12 +195,13 @@
 }
 .portfolio_description .links_block a,
 .portfolio_description .links_block a:visited{
-    color: #528ac5;
     display: block;
     line-height: 38px;
     height: 38px;
 }
-.portfolio_description .links_block a>p{
+.portfolio_description .links_block a>p,
+.portfolio_description .links_block a:visited>p{
+    color: #528ac5;
     display: inline-block;
     transform: translate(0%, -50%);
     top: 25%;

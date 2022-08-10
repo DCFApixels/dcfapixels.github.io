@@ -5,6 +5,7 @@
     top: 0;
     background-color: #00000055;
     z-index: 10000;
+    
 }
 
 .navbar li{
@@ -19,4 +20,5 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     text-decoration: none;
+    text-shadow:none;
 }

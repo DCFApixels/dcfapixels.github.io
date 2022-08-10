@@ -1,0 +1,124 @@
+hr{
+    margin: 0;
+}
+*{
+    color: #95ff21;
+    text-shadow: 0 0 10px #95ff21;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 16pt; 
+}
+#title h1{
+    padding: 100px 0;
+    text-align: center;
+    
+    font-size: 56pt; 
+}
+li{
+    margin-left: 32px;
+}
+
+#project_view
+{
+    white-space:nowrap;
+    background-color: #2f2c4f;
+   
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    display: flex;    
+    box-sizing: border-box;
+}
+
+#project_view>*{
+    margin: 0;
+    padding: 0;   
+    height: 560px;
+}
+#project_view video{
+    display: block;
+    height: 560px;
+}
+
+.my_video~div{
+    opacity: 0.0;
+}
+.poster~div{
+    opacity: 1;
+    pointer-events: none;
+    display: block;
+    position: relative;
+    transform: translate(0, -100%);
+    width: 100%;
+    height: 100%;
+    background-color: #2d4094aa;
+    background-image: url(../images/Play.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 128px;
+}
+
+#description
+{
+    margin-top: 80px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#links
+{
+    margin-top: 80px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: #1b1a28;
+    border-radius: 15px 15px 0 0;
+    padding: 10px;
+}
+#links a,
+#links a:visited{
+    display: block;
+    line-height: 38px;
+    height: 38px;
+}
+#links a>p,
+#links a:visited>p{
+    text-shadow: none;
+    color: #528ac5;
+    display: inline-block;
+    transform: translate(0%, -50%);
+    top: 25%;
+    position: relative;
+    white-space:nowrap;
+    text-decoration:underline;
+}
+#links img{
+    height: 32px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#links a,
+#links a:visited{
+
+}
+
+
+
+@media (max-width: 600px) 
+{
+    #title h1{
+        padding: 150px 0 100px 0;
+        font-size: 30pt; 
+    }
+    #project_view>*{
+        margin: 0;
+        padding: 0;   
+        height: 300px;
+    }
+    #project_view video{  
+        height: 300px;
+    }
+}

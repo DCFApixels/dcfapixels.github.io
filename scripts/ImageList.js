@@ -52,10 +52,23 @@ function Block(root, img, des)
 var lists = document.querySelectorAll(".image_list");
 for (let i = 0; i < lists.length; i++) {
     const list = lists[i];
-    buildImageList(list, list.getAttribute('contentName'), list.getAttribute('count'), list.getAttribute('datasource'));
+    let datasource = list.getAttribute('datasource');
+    let template = list.getAttribute('template');
+    if (template == "BigBlocks")
+    {
+        buildImageList(list, datasource);
+    }
+    else
+    {
+        buildImageList(list, datasource);
+    }
 }
 
-function buildImageList(root, contentName, count, datasource)
+function buildBigBlocks(root, datasource)
+{
+
+}
+function buildImageList(root, datasource)
 {
     if (datasource == null)
         return;

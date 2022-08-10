@@ -1,5 +1,25 @@
 var data = {};
 data.portfolio = {};
+data.portfolio.mainProjects = [
+  {
+    name: "Pirate Passage",
+    image: "Game1.jpg",
+    description: "Role: Developer",
+    style: "project",
+    template: "project",    
+    links:[
+      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://drive.google.com/file/d/1Y3sqR-_8SWYL4KH6Mjd4PJRXDySLTJbL/view"},
+      {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/3HNcnujCmgT6JA"},
+    ],
+    screenShotes:[
+      "images/Screenshotes/Game1Screen1.jpg",
+      "images/Screenshotes/Game1Screen2.jpg",
+      "images/Screenshotes/Game1Screen3.jpg",
+      "images/Screenshotes/Game1Screen4.jpg",
+      "images/Screenshotes/Game1Screen5.jpg",
+    ]
+  },  
+];
 data.portfolio.projects = [
   {
     name: "Sort Bag 3D!",
@@ -20,6 +40,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project1.html"},
       {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://drive.google.com/file/d/1Y3sqR-_8SWYL4KH6Mjd4PJRXDySLTJbL/view"},
       {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/3HNcnujCmgT6JA"},
     ],
