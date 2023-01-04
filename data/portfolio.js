@@ -46,6 +46,16 @@ data.portfolio.projects = [
     ],
   },   
   {
+    name: "Advent Calendar",
+    image: "Game6.jpg",
+    description: "Role: Developer",
+    style: "project",
+    template: "project",    
+    links:[
+      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.adventcalendar&hl=ru&gl=US"},
+    ],
+  },   
+  {
     name: "Arrow Explosion",
     image: "Game2.jpg",
     description: "Role: Producer, VFX artist, Level designer",
@@ -82,7 +92,7 @@ data.portfolio.projects = [
   {
     name: "Math Reactor",
     image: "GameMathReactor.jpg",
-    description: "Completely my project",
+    description: "Pet-project/Completely my work(Code, Art, VFX, Translation etc)",
     style: "project",
     template: "project",    
     links:[
