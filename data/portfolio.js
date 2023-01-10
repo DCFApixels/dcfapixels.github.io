@@ -119,6 +119,16 @@ data.portfolio.projects = [
       {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/UZ5UG4DLH6NDbA"},
     ],
   }, 
+  {
+    name: "Ragdoll Dunk 3D",
+    image: "GameMaxSlowmo.jpg",
+    description: "Role: Developer",
+    style: "project",
+    template: "project",    
+    links:[
+      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.maxslowmo"},
+    ],
+  },  
 ];
 data.portfolio.otherProjects = [
   {
