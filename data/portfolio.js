@@ -76,7 +76,7 @@ data.portfolio.projects = [
   {
     name: "Arrow Explosion",
     image: "Game2.jpg",
-    description: "Role: Producer, VFX artist, Level designer",
+    description: "Role: Producer, VFX/SFX artist, Level designer",
     style: "project",
     template: "project",
     links:[
