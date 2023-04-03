@@ -141,6 +141,16 @@ data.portfolio.otherProjects = [
       {icon: "images/IconYoutubeBlue.png", text:"Example", url: "https://www.youtube.com/watch?v=BD41TeVHSis"},
     ],
   },  
+  {
+    name: "DataMath",
+    image: "DataMath.jpg",
+    description: "Type library with HLSL-inspired syntax</br>Role: Developer(C#)</br>",
+    style: "project",
+    template: "project",
+    links:[
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DataMath"},
+    ],
+  },  
 ];
 
 data.portfolio.vfx = [
