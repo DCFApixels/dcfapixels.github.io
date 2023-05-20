@@ -144,11 +144,21 @@ data.portfolio.otherProjects = [
   {
     name: "DataMath",
     image: "DataMath.jpg",
-    description: "Type library with HLSL-inspired syntax</br>Role: Developer(C#)</br>",
+    description: "Type library with HLSL-inspired syntax",
     style: "project",
     template: "project",
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DataMath"},
+    ],
+  },  
+  {
+    name: "Unity Notes",
+    image: "UnityNotes.jpg",
+    description: "Notes on Scene View for designers",
+    style: "project",
+    template: "project",
+    links:[
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Notes-Unity"},
     ],
   },  
 ];
