@@ -152,6 +152,16 @@ data.portfolio.otherProjects = [
     ],
   },  
   {
+    name: "DragonECS",
+    image: "DragonECS.jpg",
+    description: "C# Entity Component System Framework",
+    style: "project",
+    template: "project",
+    links:[
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DragonECS"},
+    ],
+  },  
+  {
     name: "Unity Notes",
     image: "UnityNotes.jpg",
     description: "Notes on Scene View for designers",
