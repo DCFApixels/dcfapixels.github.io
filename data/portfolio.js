@@ -120,7 +120,7 @@ data.portfolio.projects = [
     ],
   }, 
   {
-    name: "Ragdoll Dunk 3D",
+    name: "Max Slowmo",
     image: "GameMaxSlowmo.jpg",
     description: "Role: Developer",
     style: "project",
