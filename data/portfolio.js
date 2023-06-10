@@ -134,7 +134,7 @@ data.portfolio.otherProjects = [
   {
     name: "PainCraft/БольКрафт",
     image: "OtherProject1.jpg",
-    description: "Project type: Map for Warcraft 3</br>Role: Developer(Lua)</br>Main point: Procedural map generation",
+    description: "Project type: Map for Warcraft 3</br>Role: Programmer(Lua)</br>Main point: Procedural map generation",
     style: "project",
     template: "project",
     links:[
