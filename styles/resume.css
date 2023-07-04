@@ -2,10 +2,11 @@
     width: 900px;
     margin-left: auto;
     margin-right: auto;
-    color: #95ff21;
-    text-shadow: 0 0 10px #95ff21;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16pt; 
+    color: #9bff31;
+    text-shadow: 0 0 10px #94ff21b4, 1px 0px 1.75px #3d0066, -1px 0px 1.75px #3d0066, 0px 1px 1.75px #3d0066, 0px -2px 1.75px #3d0066;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.38;
+    font-size: 15pt; 
 }
 #resume h2, #contact h2{
     font-size: 30pt; 
