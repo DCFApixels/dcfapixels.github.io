@@ -191,12 +191,6 @@ data.portfolio.vfx = [
     style: "dark",
   },
   {
-    name: "Fire",
-    image: "VFXFire.jpg",
-    video: "VFXFire.webm",
-    description: "VFX Graph",
-  },
-  {
     name: "Candles",
     image: "VFXCandles.jpg",
     video: "VFXCandles.webm",
@@ -214,6 +208,12 @@ data.portfolio.vfx = [
     video: "VFXExplosion.webm",
     description: "Particle System + Shader Graph + Animator",
     demoUrl: "https://dcfapixels.github.io/VFXExamples/",
+  },
+  {
+    name: "Fire",
+    image: "VFXFire.jpg",
+    video: "VFXFire.webm",
+    description: "VFX Graph",
   },
   {
     name: "Orb of Lightning",
