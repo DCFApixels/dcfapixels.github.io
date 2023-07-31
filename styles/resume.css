@@ -5,15 +5,26 @@
     color: #92ff1d;
     text-shadow: 0 0 10px #94ff219d, 1px 0px 1.75px #3d0066, -1px 0px 1.75px #3d0066, 0px 2px 2px #3d0066, 0px -1px 1.75px #3d0066;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.42;
+    line-height: 1.28;
     font-size: 15pt; 
 }
-ul>ul>li{
+
+ul>li>ul{
   font-size: 13pt; 
+  margin-left: 25px;
+}
+ul>li{
+  margin-bottom: 3pt;
+  margin-top: 3pt;
 }
 #resume h3{
   font-weight: 300;
   text-decoration: underline;
+  display: inline;
+}
+
+.little_font{
+  font-size: 13pt; 
 }
 
 #resume h2, #contact h2{
@@ -38,9 +49,7 @@ ul>ul>li{
   text-align:justify;
 }
 
-ul>ul{
-  margin-left: 25px;
-}
+
 
 .no_ul_mark{
   list-style-type: none;
