@@ -107,8 +107,6 @@
 
 .portfolio_description{
     z-index: 100;
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -117,11 +115,15 @@
     box-shadow: 0 0 35px #4aaeff80;
     background-color: #1b1a28;
     contain:none;
+
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
 }
 .portfolio_description:hover{
-    transition: all 0.4s;
     width: 103%;
     height: 103%;
+    transition: all 0.2s;
 }
 .portfolio_description p{
     text-align: center;
@@ -177,17 +179,18 @@
 
 .portfolio_description.hidden .links_block{
     top: 0%;
-    transition: all 0.5s;
+    transition: top 0.25s;
 }
 .portfolio_description .links_block{
     z-index: -1;
     height: auto;
     position: absolute;
-    top: 100%;
     left: 50%;
     background-color: #1b1a28;
     transform: translate(-50%, 0%);
-    transition: all 0.5s;
+
+    top: 100%;
+    transition: top 0.25s;
 
     width: calc(100% - 30px);
     padding: 10px;
