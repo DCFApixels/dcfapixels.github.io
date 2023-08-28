@@ -9,11 +9,11 @@
     font-size: 15pt; 
 }
 
-ul>li>ul{
+#resume ul>li>ul{
   font-size: 13pt; 
   margin-left: 25px;
 }
-ul>li{
+#resume ul>li{
   margin-bottom: 3pt;
   margin-top: 3pt;
 }
