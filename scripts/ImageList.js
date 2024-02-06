@@ -49,6 +49,8 @@ function Block(root, img, des)
     this.hideDescription();
 }
 
+
+
 var lists = document.querySelectorAll(".image_list");
 for (let i = 0; i < lists.length; i++) {
     const list = lists[i];
@@ -82,12 +84,17 @@ function buildImageList(root, datasource)
         let content = document.createElement("div");
 
         if (elemdata.style != null)
+        {
             content.classList.add(elemdata.style);
+        }
         else
+        {
             content.classList.add("default");
+        }
 
         let img = document.createElement("img");
         img.src = IMAGE_PATH + elemdata.image;
+        img.alt = "Screenshot of the project";
         if (elemdata.imageScale != null)
         {
             img.style.width = elemdata.imageScale;
@@ -96,6 +103,8 @@ function buildImageList(root, datasource)
         img.classList.add("preview");
         
 
+
+        //#region description block
         let des;
         if (elemdata.demoUrl != null && elemdata.demoUrl != "")
         {
@@ -120,7 +129,8 @@ function buildImageList(root, datasource)
             desVideo.src = VIDEO_PATH + elemdata.video;
             desVideo.muted = true;
             desVideo.loop = true;
-            des.appendChild(desVideo); 
+            desVideo.alt = "Demo video";
+            des.appendChild(desVideo);
             desVideo.pause();
         }
         else
@@ -133,6 +143,7 @@ function buildImageList(root, datasource)
                 desImg.style.height = elemdata.imageScale;
             }
             desImg.classList.add("preview");
+            desImg.alt = "Screenshot of the project";
             des.appendChild(desImg); 
         }
 
@@ -185,10 +196,19 @@ function buildImageList(root, datasource)
             }
             des.appendChild(linksblock);
         }
+        //#endregion
 
         portfolioBlocks.push(new Block(content, img, des));
 
         content.appendChild(img);
+        if (elemdata.techIcon != null)
+        {
+            let techIconImg = document.createElement("img");
+            techIconImg.src = IMAGE_PATH + elemdata.techIcon;
+            techIconImg.classList.add("tech_icon");
+            content.append(techIconImg)
+            des.append(techIconImg.cloneNode(true))
+        }
         content.appendChild(des);
         li.appendChild(content);
         root.appendChild(li);

@@ -66,6 +66,44 @@
     user-select: none;
 }
 
+
+
+
+
+#portfolio .tech_icon
+{
+    object-fit: contain;
+    position: absolute;
+    user-select: none;
+    border-radius: 8.5pt;
+    width: 13%;
+    height: 13%;
+    top: 2%;
+    right: 2%;
+    /*box-shadow: #00000090 0px 1pt 6pt;*/
+}
+#portfolio .portfolio_description:hover .tech_icon
+{
+    width: 13%;
+    height: 13%;
+    transition: all 0.2s;
+}
+#portfolio .portfolio_description:hover .tech_icon
+{
+    width: 17%;
+    height: 17%;
+    transition: all 0.2s;
+}
+#portfolio .project>.tech_icon
+{
+    width: 13%;
+    height: 13%;
+    opacity: 0.5;
+    /*box-shadow: #00000090 0px 1pt 6pt;*/
+}
+
+
+
 /*.image_list li>div>img,
 .portfolio_description>img
 {

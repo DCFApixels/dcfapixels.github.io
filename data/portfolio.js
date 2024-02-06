@@ -147,6 +147,7 @@ data.portfolio.otherProjects = [
     description: "Type library with HLSL-inspired syntax",
     style: "project",
     template: "project",
+    techIcon: "CSharp_TechIcon.gif",
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DataMath"},
     ],
@@ -157,6 +158,7 @@ data.portfolio.otherProjects = [
     description: "C# Entity Component System Framework",
     style: "project",
     template: "project",
+    techIcon: "CSharp_TechIcon.gif",
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DragonECS"},
     ],
@@ -167,6 +169,7 @@ data.portfolio.otherProjects = [
     description: "Notes on Scene View for designers",
     style: "project",
     template: "project",
+    techIcon: "Unity_TechIcon.gif",
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Notes-Unity"},
     ],
