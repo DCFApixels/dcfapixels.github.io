@@ -136,6 +136,7 @@ data.portfolio.otherProjects = [
     image: "OtherProject1.jpg",
     description: "Project type: Map for Warcraft 3</br>Role: Programmer(Lua)</br>Main point: Procedural map generation",
     style: "project",
+    techIcon: "Lua_TechIcon.gif",
     template: "project",
     links:[
       {icon: "images/IconYoutubeBlue.png", text:"Example", url: "https://www.youtube.com/watch?v=BD41TeVHSis"},
@@ -161,6 +162,17 @@ data.portfolio.otherProjects = [
     techIcon: "CSharp_TechIcon.gif",
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DragonECS"},
+    ],
+  },  
+  {
+    name: "DragonECS-Unity",
+    image: "DragonECS_Unity.jpg",
+    description: "Integration with Unity for DragonECS",
+    style: "project",
+    template: "project",
+    techIcon: "Unity_TechIcon.gif",
+    links:[
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DragonECS-Unity"},
     ],
   },  
   {
