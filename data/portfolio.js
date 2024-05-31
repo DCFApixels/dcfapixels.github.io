@@ -28,6 +28,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project2.html"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DCFA.MathReactor&hl=ru&gl=US"},
     ],
   },
@@ -50,6 +51,8 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
+      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://www.youtube.com/watch?v=RkV44NKDiV4&ab_channel=HyperHybridCasualGames"},
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project6.html"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.adventcalendar&hl=ru&gl=US"},
     ],
   },    
@@ -60,6 +63,8 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
+      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://rutube.ru/video/e18a41def9d5e6c7b3f8887f13941ab2/"},
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project5.html"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.foodfactory&hl=ru&gl=US"},
     ],
   },   
@@ -71,6 +76,7 @@ data.portfolio.projects = [
     template: "project",    
     links:[
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.ragdolldunk3d&hl=ru&gl=US"},
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project3.html"},
     ],
   },  
   {
@@ -80,8 +86,9 @@ data.portfolio.projects = [
     style: "project",
     template: "project",
     links:[
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.wannaplay.arrowexplosion"},
       {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/ahajmf9PL925-g"},
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project4.html"},
+      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.wannaplay.arrowexplosion"},
     ],
   }, 
   {
@@ -126,6 +133,8 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
+      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://www.youtube.com/watch?v=hwbObZ6XVu8&ab_channel=AndroidGamingwithAshraf"},
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project7.html"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.maxslowmo"},
     ],
   },  
