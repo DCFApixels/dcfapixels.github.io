@@ -209,14 +209,37 @@ function buildImageList(root, datasource)
             content.append(techIconImg)
             des.append(techIconImg.cloneNode(true))
         }
+        if (elemdata.githubRepositoryApiUrl != null)
+        {
+            let startsBar = document.createElement("p");
+            startsBar.classList.add("stars_bar");
+            content.append(startsBar);
+            let clone = startsBar.cloneNode(true);
+            des.append(clone)
+            setStarCountForTag(elemdata.githubRepositoryApiUrl, startsBar);
+            setStarCountForTag(elemdata.githubRepositoryApiUrl, clone);
+        }
         content.appendChild(des);
         li.appendChild(content);
         root.appendChild(li);
     }
 }
 
-function buildDicription()
+async function setStarCountForTag(url, tag) 
 {
-
+    tag.classList.add("hidden");
+    tag.innerHTML = "";
+    try 
+    {
+        const response = await fetch(url);
+        const data = await response.json();
+        const starCount = data.stargazers_count;
+        if(parseInt(starCount) > 5)
+        {
+            tag.innerHTML = "" + starCount;
+            tag.classList.remove("hidden");
+        }
+    } 
+    catch (error) { }
 }
 

@@ -102,6 +102,38 @@
     /*box-shadow: #00000090 0px 1pt 6pt;*/
 }
 
+#portfolio .stars_bar::after{
+    content: ' ';
+    display: inline-block;
+    width: 16pt;
+    height: 16pt;
+    background-image: url("../images/GitHubStar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle; 
+    margin-left: 2px;
+    margin-bottom: 5px;
+}
+
+#portfolio .stars_bar
+{
+    display: block;
+    object-fit: contain;
+    position: absolute;
+    user-select: none;
+    font-size: 16pt;
+    top: 2%;
+    left: 2%;
+
+    color: gold;
+    font-weight: 700;
+    text-shadow:
+        0 2px 1px #945104,
+        2px 0 1px #945104,
+        0 -2px 1px #945104,
+        -2px 0 1px #945104;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
 
 
 /*.image_list li>div>img,

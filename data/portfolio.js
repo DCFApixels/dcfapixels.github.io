@@ -158,6 +158,7 @@ data.portfolio.otherProjects = [
     style: "project",
     template: "project",
     techIcon: "CSharp_TechIcon.gif",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DataMath",
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DataMath"},
     ],
@@ -169,6 +170,7 @@ data.portfolio.otherProjects = [
     style: "project",
     template: "project",
     techIcon: "CSharp_TechIcon.gif",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DragonECS",
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DragonECS"},
     ],
@@ -180,6 +182,7 @@ data.portfolio.otherProjects = [
     style: "project",
     template: "project",
     techIcon: "Unity_TechIcon.gif",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DragonECS-Unity",
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DragonECS-Unity"},
     ],
@@ -191,6 +194,7 @@ data.portfolio.otherProjects = [
     style: "project",
     template: "project",
     techIcon: "Unity_TechIcon.gif",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Notes-Unity",
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Notes-Unity"},
     ],
