@@ -199,6 +199,30 @@ data.portfolio.otherProjects = [
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Notes-Unity"},
     ],
   },  
+  {
+    name: "Quasi Random",
+    image: "QuasiRandom.jpg",
+    description: "Quasi Random Generator",
+    style: "project",
+    template: "project",
+    techIcon: "CSharp_TechIcon.gif",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Quasi_Random",
+    links:[
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Quasi_Random"},
+    ],
+  },  
+  {
+    name: "Password Calculator",
+    image: "PasswordCalculator.jpg",
+    description: "Password Generator",
+    style: "project",
+    template: "project",
+    techIcon: "Web_TechIcon.png",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/PasswordCalculator",
+    links:[
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/PasswordCalculator"},
+    ],
+  },  
 ];
 
 data.portfolio.vfx = [
