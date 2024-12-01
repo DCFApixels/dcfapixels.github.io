@@ -53,14 +53,32 @@ hr{
     user-select: none;
 }
 
+
+
 #github_button{
     position: fixed;
     right: 0;
     bottom: 0;
     z-index: 2000;
+
+    width: 128px;
+    height: 128px;
+
+    background: linear-gradient(135deg, transparent 40%, #191919 40%);
+    border-radius: 128px 22px 0px 22px;
 }
-#github_button img{
-    display:block
+#github_button::before{
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('../svgs/github-mark-white.svg');
+    background-repeat: no-repeat;
+    background-size: 72px;
+    background-position: bottom 6px right 6px;
 }
 
 
