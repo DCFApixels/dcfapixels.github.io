@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     background-color: #0c0b14d7;
-    /*background-image: url(../images/Close.png);*/
+    /*background-image: url(../svgs/CloseWhite.svg);*/
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
@@ -34,7 +34,7 @@
     /*background-color: #1b1a28;*/
     background-color: #2c2b3f;
     background-size: 52px;
-    background-image: url(../images/Close.png);
+    background-image: url(../svgs/CloseWhite.svg);
     border-radius: 8px;
 }
 

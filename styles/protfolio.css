@@ -107,7 +107,7 @@
     display: inline-block;
     width: 16pt;
     height: 16pt;
-    background-image: url("../images/GitHubStar.png");
+    background-image: url("../svgs/GitHubStar.svg");
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle; 

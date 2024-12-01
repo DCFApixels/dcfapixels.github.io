@@ -8,7 +8,7 @@ data.portfolio.mainProjects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://drive.google.com/file/d/1Y3sqR-_8SWYL4KH6Mjd4PJRXDySLTJbL/view"},
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://drive.google.com/file/d/1Y3sqR-_8SWYL4KH6Mjd4PJRXDySLTJbL/view"},
       {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/3HNcnujCmgT6JA"},
     ],
     screenShotes:[
@@ -40,7 +40,7 @@ data.portfolio.projects = [
     template: "project",    
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project1.html"},
-      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://drive.google.com/file/d/1Y3sqR-_8SWYL4KH6Mjd4PJRXDySLTJbL/view"},
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://drive.google.com/file/d/1Y3sqR-_8SWYL4KH6Mjd4PJRXDySLTJbL/view"},
       {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/3HNcnujCmgT6JA"},
     ],
   },   
@@ -51,7 +51,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://www.youtube.com/watch?v=RkV44NKDiV4&ab_channel=HyperHybridCasualGames"},
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://www.youtube.com/watch?v=RkV44NKDiV4&ab_channel=HyperHybridCasualGames"},
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project6.html"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.adventcalendar&hl=ru&gl=US"},
     ],
@@ -63,7 +63,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://rutube.ru/video/e18a41def9d5e6c7b3f8887f13941ab2/"},
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://rutube.ru/video/e18a41def9d5e6c7b3f8887f13941ab2/"},
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project5.html"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.foodfactory&hl=ru&gl=US"},
     ],
@@ -98,7 +98,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",
     links:[
-      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://play-games.googleusercontent.com/vp/mp4/1280x720/kVE67kuUIkc.mp4"},
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://play-games.googleusercontent.com/vp/mp4/1280x720/kVE67kuUIkc.mp4"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DefaultCompany.Sortbag3D"},
       {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/rIheURjEzOTqJA"},
     ],
@@ -110,7 +110,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://play-games.googleusercontent.com/vp/mp4/1280x720/aDd8CH_R-jU.mp4"},
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://play-games.googleusercontent.com/vp/mp4/1280x720/aDd8CH_R-jU.mp4"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.ArmGamesStudio.IdleBatteringRam"},
       {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/7fgGeiOAhLFYvQ"},
     ],
@@ -133,7 +133,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "images/IconYoutubeBlue.png", text:"Gameplay", url: "https://www.youtube.com/watch?v=hwbObZ6XVu8&ab_channel=AndroidGamingwithAshraf"},
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://www.youtube.com/watch?v=hwbObZ6XVu8&ab_channel=AndroidGamingwithAshraf"},
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project7.html"},
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.maxslowmo"},
     ],
@@ -148,7 +148,7 @@ data.portfolio.otherProjects = [
     techIcon: "Lua_TechIcon.gif",
     template: "project",
     links:[
-      {icon: "images/IconYoutubeBlue.png", text:"Example", url: "https://www.youtube.com/watch?v=BD41TeVHSis"},
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Example", url: "https://www.youtube.com/watch?v=BD41TeVHSis"},
     ],
   },  
   {
