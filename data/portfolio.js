@@ -141,28 +141,29 @@ data.portfolio.projects = [
 ];
 data.portfolio.otherProjects = [
   {
-    name: "PainCraft/БольКрафт",
-    image: "OtherProject1.jpg",
-    description: "Project type: Map for Warcraft 3</br>Role: Programmer(Lua)</br>Main point: Procedural map generation",
+    name: "Password Calculator",
+    image: "PasswordCalculator.jpg",
+    description: "Password Generator",
     style: "project",
-    techIcon: "Lua_TechIcon.gif",
     template: "project",
+    techIcon: "Web_TechIcon.png",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/PasswordCalculator",
     links:[
-      {icon: "svgs/IconYoutubeBlue.svg", text:"Example", url: "https://www.youtube.com/watch?v=BD41TeVHSis"},
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/PasswordCalculator"},
     ],
-  },  
+  },
   {
-    name: "DataMath",
-    image: "DataMath.jpg",
-    description: "Type library with HLSL-inspired syntax",
+    name: "Quasi Random",
+    image: "QuasiRandom.jpg",
+    description: "Quasi Random Generator",
     style: "project",
     template: "project",
     techIcon: "CSharp_TechIcon.gif",
-    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DataMath",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Quasi_Random",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DataMath"},
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Quasi_Random"},
     ],
-  },  
+  }, 
   {
     name: "DragonECS",
     image: "DragonECS.jpg",
@@ -198,31 +199,42 @@ data.portfolio.otherProjects = [
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Notes-Unity"},
     ],
-  },  
+  },   
   {
-    name: "Quasi Random",
-    image: "QuasiRandom.jpg",
-    description: "Quasi Random Generator",
+    name: "DataMath",
+    image: "DataMath.jpg",
+    description: "Type library with HLSL-inspired syntax",
     style: "project",
     template: "project",
     techIcon: "CSharp_TechIcon.gif",
-    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Quasi_Random",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DataMath",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Quasi_Random"},
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DataMath"},
     ],
   },  
   {
-    name: "Password Calculator",
-    image: "PasswordCalculator.jpg",
-    description: "Password Generator",
+    name: "PainCraft/БольКрафт",
+    image: "OtherProject1.jpg",
+    description: "Project type: Map for Warcraft 3</br>Role: Programmer(Lua)</br>Main point: Procedural map generation",
     style: "project",
+    techIcon: "Lua_TechIcon.gif",
     template: "project",
-    techIcon: "Web_TechIcon.png",
-    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/PasswordCalculator",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/PasswordCalculator"},
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Example", url: "https://www.youtube.com/watch?v=BD41TeVHSis"},
     ],
   },  
+  {
+    name: "",
+    image: "UnityDebugX.png",
+    description: "Debugging tool",
+    style: "project",
+    template: "project",
+    techIcon: "Unity_TechIcon.gif",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/PasswordCalculator",
+    links:[
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Unity-DebugX"},
+    ],
+  }, 
 ];
 
 data.portfolio.vfx = [
