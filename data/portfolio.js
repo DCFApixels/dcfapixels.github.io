@@ -230,7 +230,7 @@ data.portfolio.otherProjects = [
     style: "project",
     template: "project",
     techIcon: "Unity_TechIcon.gif",
-    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/PasswordCalculator",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Unity-DebugX",
     links:[
       {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Unity-DebugX"},
     ],
