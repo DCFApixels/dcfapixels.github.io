@@ -138,6 +138,18 @@ data.portfolio.projects = [
       {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.maxslowmo"},
     ],
   },  
+  {
+    name: "Crystal Siege",
+    image: "GameCrystalSiege.jpg",
+    description: "Role: VFX/Shader/Level designer",
+    style: "project",
+    template: "project",    
+    links:[
+      //{icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: " "},
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project8.html"},
+      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.helicopter.defense"},
+    ],
+  },  
 ];
 data.portfolio.otherProjects = [
   {
@@ -189,6 +201,18 @@ data.portfolio.otherProjects = [
     ],
   },  
   {
+    name: "",
+    image: "UnityDebugX.png",
+    description: "Debugging tool",
+    style: "project",
+    template: "project",
+    techIcon: "Unity_TechIcon.gif",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Unity-DebugX",
+    links:[
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Unity-DebugX"},
+    ],
+  }, 
+  {
     name: "Unity Notes",
     image: "UnityNotes.jpg",
     description: "Notes on Scene View for designers",
@@ -201,18 +225,6 @@ data.portfolio.otherProjects = [
     ],
   },   
   {
-    name: "DataMath",
-    image: "DataMath.jpg",
-    description: "Type library with HLSL-inspired syntax",
-    style: "project",
-    template: "project",
-    techIcon: "CSharp_TechIcon.gif",
-    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DataMath",
-    links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DataMath"},
-    ],
-  },  
-  {
     name: "PainCraft/БольКрафт",
     image: "OtherProject1.jpg",
     description: "Project type: Map for Warcraft 3</br>Role: Programmer(Lua)</br>Main point: Procedural map generation",
@@ -224,17 +236,17 @@ data.portfolio.otherProjects = [
     ],
   },  
   {
-    name: "",
-    image: "UnityDebugX.png",
-    description: "Debugging tool",
+    name: "DataMath",
+    image: "DataMath.jpg",
+    description: "Type library with HLSL-inspired syntax",
     style: "project",
     template: "project",
-    techIcon: "Unity_TechIcon.gif",
-    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Unity-DebugX",
+    techIcon: "CSharp_TechIcon.gif",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DataMath",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Unity-DebugX"},
+      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DataMath"},
     ],
-  }, 
+  },  
 ];
 
 data.portfolio.vfx = [
