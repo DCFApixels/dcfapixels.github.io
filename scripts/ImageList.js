@@ -126,6 +126,7 @@ function buildImageList(root, datasource)
             des.appendChild(desload); 
 
             let desVideo = document.createElement("video");
+            desVideo.preload="none";
             desVideo.src = VIDEO_PATH + elemdata.video;
             desVideo.muted = true;
             desVideo.loop = true;
