@@ -9,7 +9,7 @@ data.portfolio.mainProjects = [
     template: "project",    
     links:[
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://drive.google.com/file/d/1Y3sqR-_8SWYL4KH6Mjd4PJRXDySLTJbL/view"},
-      {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/3HNcnujCmgT6JA"},
+      {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/3HNcnujCmgT6JA"},
     ],
     screenShotes:[
       "images/Screenshotes/Game1Screen1.jpg",
@@ -28,8 +28,8 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project2.html"},
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DCFA.MathReactor&hl=ru&gl=US"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project2.html"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DCFA.MathReactor&hl=ru&gl=US"},
     ],
   },
   {
@@ -39,9 +39,9 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project1.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project1.html"},
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://drive.google.com/file/d/1Y3sqR-_8SWYL4KH6Mjd4PJRXDySLTJbL/view"},
-      {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/3HNcnujCmgT6JA"},
+      {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/3HNcnujCmgT6JA"},
     ],
   },   
   {
@@ -52,8 +52,8 @@ data.portfolio.projects = [
     template: "project",    
     links:[
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://www.youtube.com/watch?v=RkV44NKDiV4&ab_channel=HyperHybridCasualGames"},
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project6.html"},
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.adventcalendar&hl=ru&gl=US"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project6.html"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.adventcalendar&hl=ru&gl=US"},
     ],
   },    
   {
@@ -64,8 +64,8 @@ data.portfolio.projects = [
     template: "project",    
     links:[
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://rutube.ru/video/e18a41def9d5e6c7b3f8887f13941ab2/"},
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project5.html"},
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.foodfactory&hl=ru&gl=US"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project5.html"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.foodfactory&hl=ru&gl=US"},
     ],
   },   
   {
@@ -75,8 +75,8 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.ragdolldunk3d&hl=ru&gl=US"},
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project3.html"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.ragdolldunk3d&hl=ru&gl=US"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project3.html"},
     ],
   },  
   {
@@ -86,9 +86,9 @@ data.portfolio.projects = [
     style: "project",
     template: "project",
     links:[
-      {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/ahajmf9PL925-g"},
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project4.html"},
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.wannaplay.arrowexplosion"},
+      {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/ahajmf9PL925-g"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project4.html"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.wannaplay.arrowexplosion"},
     ],
   }, 
   {
@@ -99,8 +99,8 @@ data.portfolio.projects = [
     template: "project",
     links:[
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://play-games.googleusercontent.com/vp/mp4/1280x720/kVE67kuUIkc.mp4"},
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DefaultCompany.Sortbag3D"},
-      {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/rIheURjEzOTqJA"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DefaultCompany.Sortbag3D"},
+      {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/rIheURjEzOTqJA"},
     ],
   },  
   {
@@ -111,8 +111,8 @@ data.portfolio.projects = [
     template: "project",    
     links:[
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://play-games.googleusercontent.com/vp/mp4/1280x720/aDd8CH_R-jU.mp4"},
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.ArmGamesStudio.IdleBatteringRam"},
-      {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/7fgGeiOAhLFYvQ"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.ArmGamesStudio.IdleBatteringRam"},
+      {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/7fgGeiOAhLFYvQ"},
     ],
   },
   {
@@ -122,8 +122,8 @@ data.portfolio.projects = [
     style: "project",
     template: "project",
     links:[
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.wannaplay.batteringram"},
-      {icon: "images/IconDownloadBlue.png", text:"Download", url: "https://disk.yandex.ru/d/UZ5UG4DLH6NDbA"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.wannaplay.batteringram"},
+      {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/UZ5UG4DLH6NDbA"},
     ],
   }, 
   {
@@ -134,8 +134,8 @@ data.portfolio.projects = [
     template: "project",    
     links:[
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://www.youtube.com/watch?v=hwbObZ6XVu8&ab_channel=AndroidGamingwithAshraf"},
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project7.html"},
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.maxslowmo"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project7.html"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.maxslowmo"},
     ],
   },  
   {
@@ -146,8 +146,8 @@ data.portfolio.projects = [
     template: "project",    
     links:[
       //{icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: " "},
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "Project8.html"},
-      {icon: "images/IconGooglePlayBlue.png", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.helicopter.defense"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project8.html"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.helicopter.defense"},
     ],
   },  
 ];
@@ -161,7 +161,7 @@ data.portfolio.otherProjects = [
     techIcon: "Web_TechIcon.png",
     githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/PasswordCalculator",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/PasswordCalculator"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "https://github.com/DCFApixels/PasswordCalculator"},
     ],
   },
   {
@@ -173,7 +173,7 @@ data.portfolio.otherProjects = [
     techIcon: "CSharp_TechIcon.gif",
     githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Quasi_Random",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Quasi_Random"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "https://github.com/DCFApixels/Quasi_Random"},
     ],
   }, 
   {
@@ -185,7 +185,7 @@ data.portfolio.otherProjects = [
     techIcon: "CSharp_TechIcon.gif",
     githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DragonECS",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DragonECS"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "https://github.com/DCFApixels/DragonECS"},
     ],
   },  
   {
@@ -197,7 +197,7 @@ data.portfolio.otherProjects = [
     techIcon: "Unity_TechIcon.gif",
     githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DragonECS-Unity",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DragonECS-Unity"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "https://github.com/DCFApixels/DragonECS-Unity"},
     ],
   },  
   {
@@ -209,7 +209,7 @@ data.portfolio.otherProjects = [
     techIcon: "Unity_TechIcon.gif",
     githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Unity-DebugX",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Unity-DebugX"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "https://github.com/DCFApixels/Unity-DebugX"},
     ],
   }, 
   {
@@ -221,7 +221,7 @@ data.portfolio.otherProjects = [
     techIcon: "Unity_TechIcon.gif",
     githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Notes-Unity",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/Notes-Unity"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "https://github.com/DCFApixels/Notes-Unity"},
     ],
   },   
   {
@@ -244,7 +244,7 @@ data.portfolio.otherProjects = [
     techIcon: "CSharp_TechIcon.gif",
     githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DataMath",
     links:[
-      {icon: "images/IconProjectPageBlue.png", text:"Project page", url: "https://github.com/DCFApixels/DataMath"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "https://github.com/DCFApixels/DataMath"},
     ],
   },  
 ];
