@@ -99,6 +99,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",
     links:[
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project10.html"},
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://youtu.be/kVE67kuUIkc"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DefaultCompany.Sortbag3D"},
       {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/rIheURjEzOTqJA"},
