@@ -1,4 +1,4 @@
-let videoelems = document.querySelectorAll(".my_video");
+let videoelems = document.querySelectorAll("video.my_video");
 videoelems.forEach(element => {
     element.classList.add("poster");
     element.onclick = function(){

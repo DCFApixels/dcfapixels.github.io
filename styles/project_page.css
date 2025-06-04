@@ -35,7 +35,7 @@ li{
     padding: 0;   
     height: 560px;
 }
-#project_view video{
+#project_view .my_video{
     display: block;
     height: 560px;
 }
@@ -118,7 +118,7 @@ li{
         padding: 0;   
         height: 300px;
     }
-    #project_view video{  
+    #project_view .my_video{  
         height: 300px;
     }
 }
