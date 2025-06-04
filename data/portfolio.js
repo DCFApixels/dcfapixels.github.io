@@ -111,6 +111,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project9.html"},
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://www.youtube.com/shorts/cNLXJuje1Mg?feature=share"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.ArmGamesStudio.IdleBatteringRam"},
       {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/7fgGeiOAhLFYvQ"},
