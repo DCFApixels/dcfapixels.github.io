@@ -323,7 +323,7 @@ data.portfolio.vfx = [
 
 data.portfolio.pixelArt = [
   {
-    name: "",
+    name: "Goddess Gaia",
     image: "PixelArt1.png",
     description: "",
     imageScale: "90%",
@@ -346,7 +346,7 @@ data.portfolio.pixelArt = [
     description: "",
   },
   {
-    name: "",
+    name: "Eastern temple",
     image: "PixelArt2.png",
     description: "",
   },
