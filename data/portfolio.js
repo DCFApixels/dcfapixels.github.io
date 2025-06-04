@@ -75,6 +75,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://youtu.be/VBgZxx1RmsI"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.ragdolldunk3d&hl=ru&gl=US"},
       {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project3.html"},
     ],
