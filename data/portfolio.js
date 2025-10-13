@@ -152,6 +152,18 @@ data.portfolio.projects = [
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.helicopter.defense"},
       {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project8.html"},
     ],
+  },
+  {
+    name: "Order Matters",
+    image: "GameOrderMatters.jpg",
+    description: "Role: VFX/Shader designer",
+    style: "project",
+    template: "project",    
+    links:[
+      //{icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: " "},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.ZlodeyStudios.OrdersMatter"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project11.html"},
+    ],
   },  
 ];
 data.portfolio.otherProjects = [
