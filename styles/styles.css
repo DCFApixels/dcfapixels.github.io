@@ -14,6 +14,19 @@ body{
     min-width: 900px;
 }
 
+/* По умолчанию все блоки скрыты */
+:not(body)[class*="version_"] {
+    display: none;
+}
+/* Когда body имеет класс version_main, показываем блоки с version_main */
+body.version_main .version_main {
+    display: block;
+}
+/* Когда body имеет класс version_portfolio, показываем блоки с version_portfolio */
+body.version_portfolio .version_portfolio {
+    display: block;
+}
+
 
 .display-fixed{
     position:fixed;

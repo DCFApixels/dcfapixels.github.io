@@ -28,7 +28,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project2.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project2.html?version=portfolio"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DCFA.MathReactor&hl=ru&gl=US"},
     ],
   },
@@ -39,7 +39,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project1.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project1.html?version=portfolio"},
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://drive.google.com/file/d/1Y3sqR-_8SWYL4KH6Mjd4PJRXDySLTJbL/view"},
       {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/3HNcnujCmgT6JA"},
     ],
@@ -51,7 +51,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project6.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project6.html?version=portfolio"},
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://youtu.be/RkV44NKDiV4"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.adventcalendar&hl=ru&gl=US"},
     ],
@@ -63,7 +63,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project5.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project5.html?version=portfolio"},
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://youtu.be/SX1TaSxD0Qg"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.foodfactory&hl=ru&gl=US"},
     ],
@@ -75,7 +75,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project3.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project3.html?version=portfolio"},
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://youtu.be/VBgZxx1RmsI"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.ragdolldunk3d&hl=ru&gl=US"},
     ],
@@ -87,7 +87,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",
     links:[
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project4.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project4.html?version=portfolio"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.wannaplay.arrowexplosion"},
       {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/ahajmf9PL925-g"},
     ],
@@ -99,7 +99,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",
     links:[
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project10.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project10.html?version=portfolio"},
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://youtu.be/kVE67kuUIkc"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.DefaultCompany.Sortbag3D"},
       {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/rIheURjEzOTqJA"},
@@ -112,7 +112,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project9.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project9.html?version=portfolio"},
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://www.youtube.com/shorts/cNLXJuje1Mg?feature=share"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.ArmGamesStudio.IdleBatteringRam"},
       {icon: "svgs/IconDownloadBlue.svg", text:"Download", url: "https://disk.yandex.ru/d/7fgGeiOAhLFYvQ"},
@@ -136,7 +136,7 @@ data.portfolio.projects = [
     style: "project",
     template: "project",    
     links:[
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project7.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project7.html?version=portfolio"},
       {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://youtu.be/hwbObZ6XVu8"},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.games.maxslowmo"},
     ],
@@ -150,7 +150,7 @@ data.portfolio.projects = [
     links:[
       //{icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: " "},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.helicopter.defense"},
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project8.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project8.html?version=portfolio"},
     ],
   },
   {
@@ -162,7 +162,7 @@ data.portfolio.projects = [
     links:[
       //{icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: " "},
       {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.ZlodeyStudios.OrdersMatter"},
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project11.html"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project11.html?version=portfolio"},
     ],
   },  
 ];
