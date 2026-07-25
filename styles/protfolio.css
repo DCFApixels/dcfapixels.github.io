@@ -333,30 +333,22 @@
     content: "";
     z-index: 115;
     position: absolute;
-    inset: 0;
+    inset: 8px;
+    padding: 2px;
+    border-radius: 2px;
     box-sizing: border-box;
     pointer-events: none;
-    background: linear-gradient(135deg, #e7a84a 0%, #f0bd55 45%, #f6d36a 100%);
-    -webkit-mask:
-        linear-gradient(#000 0 0) top / 100% 4px no-repeat,
-        linear-gradient(#000 0 0) bottom / 100% 4px no-repeat,
-        linear-gradient(#000 0 0) left / 4px 100% no-repeat,
-        linear-gradient(#000 0 0) right / 4px 100% no-repeat,
-        linear-gradient(135deg, #000 0 12px, transparent 12px) left top / 42px 42px no-repeat,
-        linear-gradient(225deg, #000 0 12px, transparent 12px) right top / 42px 42px no-repeat,
-        linear-gradient(45deg, #000 0 12px, transparent 12px) left bottom / 42px 42px no-repeat,
-        linear-gradient(315deg, #000 0 12px, transparent 12px) right bottom / 42px 42px no-repeat;
+    background: linear-gradient(25deg, #efd678 0%, #efd678 12%, rgba(232, 154, 105, 0.48) 26%, rgba(224, 105, 96, 0) 40%, rgba(224, 105, 96, 0) 60%, rgba(232, 154, 105, 0.48) 74%, #efd678 88%, #efd678 100%);
+    -webkit-mask: 
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
     mask:
-        linear-gradient(#000 0 0) top / 100% 4px no-repeat,
-        linear-gradient(#000 0 0) bottom / 100% 4px no-repeat,
-        linear-gradient(#000 0 0) left / 4px 100% no-repeat,
-        linear-gradient(#000 0 0) right / 4px 100% no-repeat,
-        linear-gradient(135deg, #000 0 12px, transparent 12px) left top / 42px 42px no-repeat,
-        linear-gradient(225deg, #000 0 12px, transparent 12px) right top / 42px 42px no-repeat,
-        linear-gradient(45deg, #000 0 12px, transparent 12px) left bottom / 42px 42px no-repeat,
-        linear-gradient(315deg, #000 0 12px, transparent 12px) right bottom / 42px 42px no-repeat;
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
     opacity: 1;
-    transition: -webkit-mask-size 0.2s, mask-size 0.2s;
+    transition: inset 0.2s, padding 0.2s, filter 0.2s;
 }
 .image_list li .showcase_project::after{
     z-index: 90;
@@ -370,8 +362,9 @@
 }
 .image_list li .showcase_project:hover::after,
 .image_list li .showcase_project .portfolio_description:hover::after{
-    -webkit-mask-size: 100% 5px, 100% 5px, 5px 100%, 5px 100%, 52px 52px, 52px 52px, 52px 52px, 52px 52px;
-    mask-size: 100% 5px, 100% 5px, 5px 100%, 5px 100%, 52px 52px, 52px 52px, 52px 52px, 52px 52px;
+    inset: 6px;
+    padding: 3px;
+    filter: brightness(1.08);
 }
 .image_list li .dark,
 .image_list li .dark a:visited{

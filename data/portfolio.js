@@ -26,7 +26,6 @@ data.portfolio.projects = [
     image: "GameMathReactor.jpg",
     description: "Pet-project/Completely my work(Code, Art, VFX, Translation etc)",
     style: "project",
-    showcase: true,
     template: "project",    
     links:[
       {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project2.html?version=portfolio"},
@@ -210,6 +209,7 @@ data.portfolio.otherProjects = [
     image: "DragonECS_Unity.jpg",
     description: "Integration with Unity for DragonECS",
     style: "project",
+    showcase: true,
     template: "project",
     techIcon: "Unity_TechIcon.gif",
     githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/DragonECS-Unity",
@@ -222,6 +222,7 @@ data.portfolio.otherProjects = [
     image: "UnityDebugX.png",
     description: "Debugging tool",
     style: "project",
+    showcase: true,
     template: "project",
     techIcon: "Unity_TechIcon.gif",
     githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/Unity-DebugX",

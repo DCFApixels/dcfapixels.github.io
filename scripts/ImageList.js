@@ -256,6 +256,10 @@ async function setStarCountForTag(url, tag)
         {
             showStarCountForTag(cachedStars.starCount, tag);
         }
+        else
+        {
+            showStarPlaceholderForTag(tag);
+        }
     }
 }
 
@@ -295,6 +299,12 @@ function showStarCountForTag(starCount, tag)
         tag.innerHTML = "" + parseInt(starCount);
         tag.classList.remove("hidden");
     }
+}
+
+function showStarPlaceholderForTag(tag)
+{
+    tag.innerHTML = "-";
+    tag.classList.remove("hidden");
 }
 
 function readGithubStarsCache(url)
