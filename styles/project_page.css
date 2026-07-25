@@ -39,6 +39,10 @@ li{
     display: block;
     height: 560px;
 }
+#project_view .youtube_video{
+    width: 996px;
+    border: 0;
+}
 
 .my_video~div{
     opacity: 0.0;
@@ -120,5 +124,8 @@ li{
     }
     #project_view .my_video{  
         height: 300px;
+    }
+    #project_view .youtube_video{
+        width: 533px;
     }
 }

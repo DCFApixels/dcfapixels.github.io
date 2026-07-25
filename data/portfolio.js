@@ -165,6 +165,19 @@ data.portfolio.projects = [
       {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project11.html?version=portfolio"},
     ],
   },  
+  {
+    name: "Super Star Drop",
+    image: "GameSuperStarDrop.jpg",
+    description: "Role: Developer",
+    style: "project",
+    showcase: true,
+    template: "project",
+    links:[
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "Project12.html?version=portfolio"},
+      {icon: "svgs/IconYoutubeBlue.svg", text:"Gameplay", url: "https://www.youtube.com/watch?v=WirP1fTsqIY"},
+      {icon: "svgs/IconGooglePlayBlue.svg", text:"Google Play", url: "https://play.google.com/store/apps/details?id=com.CozyCaptain.SSD"},
+    ],
+  },
 ];
 data.portfolio.otherProjects = [
   {
