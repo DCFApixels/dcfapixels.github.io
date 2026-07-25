@@ -96,10 +96,15 @@
 }
 #portfolio .project>.tech_icon
 {
+    z-index: 95;
     width: 13%;
     height: 13%;
     opacity: 0.5;
     /*box-shadow: #00000090 0px 1pt 6pt;*/
+}
+#portfolio .portfolio_description>.tech_icon
+{
+    z-index: 130;
 }
 
 #portfolio .stars_bar::after{
@@ -122,8 +127,11 @@
     position: absolute;
     user-select: none;
     font-size: 16pt;
-    top: 2%;
-    left: 2%;
+    top: 17%;
+    right: 2%;
+    left: auto;
+    min-width: 13%;
+    text-align: right;
 
     color: gold;
     font-weight: 700;
@@ -133,6 +141,14 @@
         0 -2px 1px #945104,
         -2px 0 1px #945104;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+#portfolio .project>.stars_bar
+{
+    z-index: 95;
+}
+#portfolio .portfolio_description>.stars_bar
+{
+    z-index: 130;
 }
 
 
@@ -308,6 +324,54 @@
         1px 1px 1px #2f2c4f,
         -1px 1px 1px #2f2c4f,
         -1px -1px 1px #2f2c4f;
+}
+.image_list li .showcase_project{
+    z-index: 1;
+}
+.image_list li .showcase_project::after,
+.image_list li .showcase_project .portfolio_description::after{
+    content: "";
+    z-index: 115;
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    pointer-events: none;
+    background: linear-gradient(135deg, #e7a84a 0%, #f0bd55 45%, #f6d36a 100%);
+    -webkit-mask:
+        linear-gradient(#000 0 0) top / 100% 4px no-repeat,
+        linear-gradient(#000 0 0) bottom / 100% 4px no-repeat,
+        linear-gradient(#000 0 0) left / 4px 100% no-repeat,
+        linear-gradient(#000 0 0) right / 4px 100% no-repeat,
+        linear-gradient(135deg, #000 0 12px, transparent 12px) left top / 42px 42px no-repeat,
+        linear-gradient(225deg, #000 0 12px, transparent 12px) right top / 42px 42px no-repeat,
+        linear-gradient(45deg, #000 0 12px, transparent 12px) left bottom / 42px 42px no-repeat,
+        linear-gradient(315deg, #000 0 12px, transparent 12px) right bottom / 42px 42px no-repeat;
+    mask:
+        linear-gradient(#000 0 0) top / 100% 4px no-repeat,
+        linear-gradient(#000 0 0) bottom / 100% 4px no-repeat,
+        linear-gradient(#000 0 0) left / 4px 100% no-repeat,
+        linear-gradient(#000 0 0) right / 4px 100% no-repeat,
+        linear-gradient(135deg, #000 0 12px, transparent 12px) left top / 42px 42px no-repeat,
+        linear-gradient(225deg, #000 0 12px, transparent 12px) right top / 42px 42px no-repeat,
+        linear-gradient(45deg, #000 0 12px, transparent 12px) left bottom / 42px 42px no-repeat,
+        linear-gradient(315deg, #000 0 12px, transparent 12px) right bottom / 42px 42px no-repeat;
+    opacity: 1;
+    transition: -webkit-mask-size 0.2s, mask-size 0.2s;
+}
+.image_list li .showcase_project::after{
+    z-index: 90;
+}
+.image_list li .showcase_project .portfolio_description{
+    box-shadow: 0 0 35px #4aaeff80;
+    transition: width 0.2s, height 0.2s, box-shadow 0.2s;
+}
+.image_list li .showcase_project .portfolio_description::after{
+    z-index: 115;
+}
+.image_list li .showcase_project:hover::after,
+.image_list li .showcase_project .portfolio_description:hover::after{
+    -webkit-mask-size: 100% 5px, 100% 5px, 5px 100%, 5px 100%, 52px 52px, 52px 52px, 52px 52px, 52px 52px;
+    mask-size: 100% 5px, 100% 5px, 5px 100%, 5px 100%, 52px 52px, 52px 52px, 52px 52px, 52px 52px;
 }
 .image_list li .dark,
 .image_list li .dark a:visited{

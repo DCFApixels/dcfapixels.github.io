@@ -2,8 +2,10 @@ const VIDEO_PATH = "videos/"
 const IMAGE_PATH = "images/"
 const IMAGE_F = ".png"
 const VIDEO_F = ".mp4"
+const GITHUB_STARS_CACHE_TTL = 24 * 60 * 60 * 1000;
 
 var portfolioBlocks = [];
+var githubStarsRequests = {};
 
 function Block(root, img, des)
 {
@@ -90,6 +92,10 @@ function buildImageList(root, datasource)
         else
         {
             content.classList.add("default");
+        }
+        if (elemdata.showcase === true)
+        {
+            content.classList.add("showcase_project");
         }
 
         let img = document.createElement("img");
@@ -230,17 +236,106 @@ async function setStarCountForTag(url, tag)
 {
     tag.classList.add("hidden");
     tag.innerHTML = "";
+    const cachedStars = readGithubStarsCache(url);
+    if (cachedStars != null)
+    {
+        showStarCountForTag(cachedStars.starCount, tag);
+    }
+    if (cachedStars != null && Date.now() - cachedStars.timestamp < GITHUB_STARS_CACHE_TTL)
+    {
+        return;
+    }
     try 
     {
-        const response = await fetch(url);
-        const data = await response.json();
-        const starCount = data.stargazers_count;
-        if(parseInt(starCount) > 5)
-        {
-            tag.innerHTML = "" + starCount;
-            tag.classList.remove("hidden");
-        }
+        const starCount = await getGithubStars(url);
+        showStarCountForTag(starCount, tag);
     } 
+    catch (error) 
+    { 
+        if (cachedStars != null)
+        {
+            showStarCountForTag(cachedStars.starCount, tag);
+        }
+    }
+}
+
+function getGithubStars(url)
+{
+    if (githubStarsRequests[url] == null)
+    {
+        githubStarsRequests[url] = fetch(url)
+            .then(response => {
+                if (response.ok == false)
+                {
+                    throw new Error("GitHub response " + response.status);
+                }
+                return response.json();
+            })
+            .then(data => {
+                const starCount = parseInt(data.stargazers_count);
+                if (Number.isNaN(starCount))
+                {
+                    throw new Error("Invalid GitHub stars count");
+                }
+                writeGithubStarsCache(url, starCount);
+                return starCount;
+            })
+            .catch(error => {
+                delete githubStarsRequests[url];
+                throw error;
+            });
+    }
+    return githubStarsRequests[url];
+}
+
+function showStarCountForTag(starCount, tag)
+{
+    if(parseInt(starCount) > 5)
+    {
+        tag.innerHTML = "" + parseInt(starCount);
+        tag.classList.remove("hidden");
+    }
+}
+
+function readGithubStarsCache(url)
+{
+    try
+    {
+        const raw = localStorage.getItem(getGithubStarsCacheKey(url));
+        if (raw == null)
+        {
+            return null;
+        }
+        const cached = JSON.parse(raw);
+        if (cached == null || Number.isNaN(parseInt(cached.starCount)) || cached.timestamp == null)
+        {
+            return null;
+        }
+        return {
+            starCount: parseInt(cached.starCount),
+            timestamp: parseInt(cached.timestamp)
+        };
+    }
+    catch (error)
+    {
+        return null;
+    }
+}
+
+function writeGithubStarsCache(url, starCount)
+{
+    try
+    {
+        localStorage.setItem(getGithubStarsCacheKey(url), JSON.stringify({
+            starCount: parseInt(starCount),
+            timestamp: Date.now()
+        }));
+    }
     catch (error) { }
+}
+
+function getGithubStarsCacheKey(url)
+{
+    return "github_stars_" + url;
 }
 
