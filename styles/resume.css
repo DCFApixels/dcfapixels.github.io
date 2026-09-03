@@ -1,5 +1,6 @@
 #resume, #contact{
-    width: 900px;
+    width: calc(100% - 40px);
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     color: #92ff1d;
@@ -42,8 +43,14 @@
   height: 70px;
   object-fit:contain;
 }
+.resume__section{
+  width: 100%;
+}
 .resume__section td:first-child{
   width: 300px;
+}
+.resume__section td{
+  vertical-align: top;
 }
 .resume__section p{
   text-align:justify;
@@ -74,4 +81,57 @@
 #contact a,
 #contact a:visited{
   color: #95ff21;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px)
+{
+  #resume, #contact{
+    width: calc(100% - 28px);
+    font-size: 12.5pt;
+  }
+  .resume__section,
+  .resume__section tbody,
+  .resume__section tr,
+  .resume__section td{
+    display: block;
+    width: 100%;
+  }
+  .resume__section td:first-child{
+    width: 100%;
+  }
+  #resume h1, #contact h1{
+    font-size: 30pt;
+    margin-bottom: 24px;
+  }
+  #resume h2, #contact h2{
+    font-size: 22pt;
+    margin-bottom: 12px;
+  }
+  #resume ul{
+    padding-left: 20px;
+  }
+  #resume ul>li>ul{
+    font-size: 12pt;
+    margin-left: 10px;
+  }
+  .no_ul_mark{
+    margin-left: 0;
+    padding-left: 0 !important;
+  }
+  #contact .resume__section tr{
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    column-gap: 10px;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  #contact .resume__section td,
+  #contact .resume__section td:first-child{
+    width: auto;
+  }
+  #contact .resume__section img{
+    width: 42px;
+    height: 42px;
+  }
 }

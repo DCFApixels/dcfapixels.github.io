@@ -31,7 +31,7 @@
 .image_list{
     text-shadow: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     list-style-type: none;
     
     background:linear-gradient(to left, #2f2c4f50, #2f2c4f12);
@@ -219,9 +219,10 @@
 }
 .portfolio_description .text,
 .portfolio_description .title{
-    margin: 0 calc(50% - 125px);
+    left: 50%;
+    transform: translate(-50%, 0);
     position: absolute;
-    width: 250px;
+    width: min(250px, calc(100% - 30px));
 }
 .portfolio_description .text{
     bottom: 5%;
@@ -397,4 +398,95 @@
 .image_list li .dark .portfolio_description a:visited{
     text-shadow: none;
     color: #000d !important;
+}
+
+@media (max-width: 760px)
+{
+    #portfolio{
+        font-size: 13pt;
+    }
+    #portfolio h1{
+        font-size: 24pt;
+        text-indent: 18px;
+    }
+    #portfolio h1::before{
+        padding-right: 10px;
+    }
+    .image_list{
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    }
+    .portfolio_description .title{
+        font-size: 16pt;
+    }
+    .portfolio_description .text{
+        font-size: 11.5pt;
+    }
+    .portfolio_description .links_block{
+        width: calc(100% - 18px);
+        padding: 8px;
+    }
+    .portfolio_description .links_block a,
+    .portfolio_description .links_block a:visited{
+        line-height: 32px;
+        height: 32px;
+    }
+    .portfolio_description .links_block img{
+        height: 26px;
+    }
+}
+
+@media (max-width: 430px)
+{
+    .image_list{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (orientation: portrait)
+{
+    .image_list{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .portfolio_description .title,
+    .portfolio_description .text{
+        width: calc(100% - 10px);
+    }
+    .portfolio_description .title{
+        font-size: clamp(8pt, 3.4vw, 16pt);
+        top: 7%;
+    }
+    .portfolio_description .text{
+        font-size: clamp(7pt, 2.5vw, 11.5pt);
+        bottom: 6%;
+    }
+    #portfolio .stars_bar{
+        font-size: clamp(8pt, 3vw, 14pt);
+    }
+    #portfolio .stars_bar::after{
+        width: clamp(10pt, 3vw, 14pt);
+        height: clamp(10pt, 3vw, 14pt);
+        margin-bottom: 2px;
+    }
+    .portfolio_description .links_block{
+        width: calc(100% - 10px);
+        padding: 5px;
+    }
+    .portfolio_description .links_block a,
+    .portfolio_description .links_block a:visited{
+        height: 26px;
+        line-height: 26px;
+    }
+    .portfolio_description .links_block img{
+        height: 20px;
+        margin-right: 4px;
+    }
+    .portfolio_description .links_block a>p,
+    .portfolio_description .links_block a:visited>p{
+        font-size: clamp(7pt, 2.5vw, 11pt);
+    }
+    #portfolio .image_list .open_button{
+        width: 24px;
+        height: 24px;
+        background-size: 24px;
+    }
 }

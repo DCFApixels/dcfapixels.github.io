@@ -22,3 +22,17 @@
     text-decoration: none;
     text-shadow:none;
 }
+
+@media (max-width: 700px)
+{
+    .navbar{
+        padding-left: 0;
+    }
+    .navbar li{
+        padding: 7px 9px;
+        text-indent: 0;
+    }
+    .navbar a{
+        font-size: 11pt;
+    }
+}

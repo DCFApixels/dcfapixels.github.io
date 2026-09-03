@@ -1,5 +1,6 @@
 .module1{
-    width: 900px;
+    width: calc(100% - 40px);
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     position: static;
@@ -128,4 +129,18 @@
     opacity: 1;
     transition: all 1s;
     top: -100px;
+}
+
+@media (max-width: 700px)
+{
+    .module1{
+        width: calc(100% - 28px);
+    }
+    .module1__images{
+        height: 430px;
+    }
+    .module1 h3{
+        font-size: 20pt;
+        top: 150px;
+    }
 }

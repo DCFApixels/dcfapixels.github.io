@@ -8,10 +8,9 @@ body{
     scroll-behavior: smooth;
     background-color:#2f2c4f;
     min-height: 100%;
-    min-width: 100%;
-
-    
-    min-width: 900px;
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
 }
 
 /* По умолчанию все блоки скрыты */
@@ -146,7 +145,7 @@ hr{
     color: azure;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5VMAX;
+    font-size: clamp(14pt, 1.5vmax, 18pt);
     text-transform: uppercase;
 }
 
@@ -183,4 +182,17 @@ hr{
     /*padding-left: 16px;*/
     position: absolute;
     left: 10pt;
+}
+
+@media (max-width: 700px)
+{
+    #github_button{
+        width: 84px;
+        height: 84px;
+        border-radius: 84px 16px 0px 16px;
+    }
+    #github_button::before{
+        background-size: 46px;
+        background-position: bottom 5px right 5px;
+    }
 }

@@ -9,6 +9,7 @@
 }
 .helloblock table {
   margin: 0 auto;
+  max-width: calc(100% - 28px);
 }
 .helloblock p{
   text-indent: 30px;
@@ -72,4 +73,26 @@
   opacity: 1;
   transition: all 1s;
   margin-top: 0;
+}
+
+@media (max-width: 700px)
+{
+  .helloblock{
+    font-size: 20pt;
+  }
+  .helloblock table,
+  .helloblock tbody,
+  .helloblock tr,
+  .helloblock td{
+    display: block;
+    text-align: center;
+  }
+  .helloblock p{
+    text-indent: 0;
+    margin-top: 18px;
+  }
+  .helloblock__myphoto{
+    width: 104px;
+    border-width: 4px;
+  }
 }
