@@ -24,7 +24,7 @@ data.portfolio.projects = [
   {
     name: "Math Reactor",
     image: "GameMathReactor.jpg",
-    description: "Pet-project/Completely my work(Code, Art, VFX, Translation etc)",
+    description: "Pet project / entirely my work (code, art, VFX, translation, etc.)",
     style: "project",
     template: "project",    
     links:[
@@ -83,7 +83,7 @@ data.portfolio.projects = [
   {
     name: "Arrow Explosion",
     image: "Game2.jpg",
-    description: "Role: Producer, VFX/SFX artist, Level designer",
+    description: "Role: Producer, VFX/SFX Artist, Level Designer",
     style: "project",
     template: "project",
     links:[
@@ -144,7 +144,7 @@ data.portfolio.projects = [
   {
     name: "Crystal Siege",
     image: "GameCrystalSiege.jpg",
-    description: "Role: VFX/Shader/Level designer",
+    description: "Role: VFX / Shader / Level Designer",
     style: "project",
     template: "project",    
     links:[
@@ -156,7 +156,7 @@ data.portfolio.projects = [
   {
     name: "Order Matters",
     image: "GameOrderMatters.jpg",
-    description: "Role: VFX/Shader designer",
+    description: "Role: VFX / Shader Designer",
     style: "project",
     template: "project",    
     links:[
@@ -258,7 +258,7 @@ data.portfolio.otherProjects = [
   {
     name: "PainCraft/БольКрафт",
     image: "OtherProject1.jpg",
-    description: "Project type: Map for Warcraft 3</br>Role: Programmer(Lua)</br>Main point: Procedural map generation",
+    description: "Project type: Warcraft 3 map</br>Role: Programmer (Lua)</br>Main focus: Procedural map generation",
     style: "project",
     techIcon: "Lua_TechIcon.gif",
     template: "project",
@@ -374,7 +374,7 @@ data.portfolio.pixelArt = [
     description: "",
   },
   {
-    name: "Eastern temple",
+    name: "Eastern Temple",
     image: "PixelArt2.png",
     description: "",
   },
