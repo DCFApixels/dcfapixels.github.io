@@ -181,15 +181,15 @@ data.portfolio.projects = [
 ];
 data.portfolio.otherProjects = [
   {
-    name: "Password Calculator",
-    image: "PasswordCalculator.jpg",
-    description: "Password Generator",
+    name: "Password Tea",
+    image: "PasswordTeaIcon.svg",
+    description: "Password generator and manager",
     style: "project",
     template: "project",
     techIcon: "Web_TechIcon.png",
-    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/PasswordCalculator",
+    githubRepositoryApiUrl : "https://api.github.com/repos/DCFApixels/PasswordTea",
     links:[
-      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "https://github.com/DCFApixels/PasswordCalculator"},
+      {icon: "svgs/IconProjectPageBlue.svg", text:"Project page", url: "https://github.com/DCFApixels/PasswordTea"},
     ],
   },
   {
